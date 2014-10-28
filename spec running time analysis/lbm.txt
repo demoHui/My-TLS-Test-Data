@@ -1,0 +1,81 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 99.21   1046.39  1046.39     3000     0.35     0.35  LBM_performStreamCollide
+  0.63   1053.02     6.63       48     0.14     0.14  LBM_showGridStatistics
+  0.18   1054.88     1.86        2     0.93     0.93  LBM_initializeGrid
+  0.00   1054.92     0.04        2     0.02     0.02  LBM_initializeSpecialCellsForLDC
+  0.00   1054.92     0.00     3000     0.00     0.00  LBM_swapGrids
+  0.00   1054.92     0.00        2     0.00     0.00  LBM_allocateGrid
+  0.00   1054.92     0.00        2     0.00     0.00  LBM_freeGrid
+  0.00   1054.92     0.00        1     0.00     0.14  MAIN_finalize
+  0.00   1054.92     0.00        1     0.00     2.04  MAIN_initialize
+  0.00   1054.92     0.00        1     0.00     0.00  MAIN_parseCommandLine
+  0.00   1054.92     0.00        1     0.00     0.00  MAIN_printInfo
+
+			Call graph
+
+
+granularity: each sample hit covers 2 byte(s) for 0.00% of 1054.92 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00 1054.92                 main [1]
+             1046.39    0.00    3000/3000        LBM_performStreamCollide [2]
+                6.35    0.00      46/48          LBM_showGridStatistics [3]
+                0.00    2.04       1/1           MAIN_initialize [4]
+                0.00    0.14       1/1           MAIN_finalize [6]
+                0.00    0.00    3000/3000        LBM_swapGrids [8]
+                0.00    0.00       1/1           MAIN_parseCommandLine [11]
+                0.00    0.00       1/1           MAIN_printInfo [12]
+-----------------------------------------------
+             1046.39    0.00    3000/3000        main [1]
+[2]     99.2 1046.39    0.00    3000         LBM_performStreamCollide [2]
+-----------------------------------------------
+                0.14    0.00       1/48          MAIN_initialize [4]
+                0.14    0.00       1/48          MAIN_finalize [6]
+                6.35    0.00      46/48          main [1]
+[3]      0.6    6.63    0.00      48         LBM_showGridStatistics [3]
+-----------------------------------------------
+                0.00    2.04       1/1           main [1]
+[4]      0.2    0.00    2.04       1         MAIN_initialize [4]
+                1.86    0.00       2/2           LBM_initializeGrid [5]
+                0.14    0.00       1/48          LBM_showGridStatistics [3]
+                0.04    0.00       2/2           LBM_initializeSpecialCellsForLDC [7]
+                0.00    0.00       2/2           LBM_allocateGrid [9]
+-----------------------------------------------
+                1.86    0.00       2/2           MAIN_initialize [4]
+[5]      0.2    1.86    0.00       2         LBM_initializeGrid [5]
+-----------------------------------------------
+                0.00    0.14       1/1           main [1]
+[6]      0.0    0.00    0.14       1         MAIN_finalize [6]
+                0.14    0.00       1/48          LBM_showGridStatistics [3]
+                0.00    0.00       2/2           LBM_freeGrid [10]
+-----------------------------------------------
+                0.04    0.00       2/2           MAIN_initialize [4]
+[7]      0.0    0.04    0.00       2         LBM_initializeSpecialCellsForLDC [7]
+-----------------------------------------------
+                0.00    0.00    3000/3000        main [1]
+[8]      0.0    0.00    0.00    3000         LBM_swapGrids [8]
+-----------------------------------------------
+                0.00    0.00       2/2           MAIN_initialize [4]
+[9]      0.0    0.00    0.00       2         LBM_allocateGrid [9]
+-----------------------------------------------
+                0.00    0.00       2/2           MAIN_finalize [6]
+[10]     0.0    0.00    0.00       2         LBM_freeGrid [10]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[11]     0.0    0.00    0.00       1         MAIN_parseCommandLine [11]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[12]     0.0    0.00    0.00       1         MAIN_printInfo [12]
+-----------------------------------------------
+
+Index by function name
+
+   [9] LBM_allocateGrid        [2] LBM_performStreamCollide [4] MAIN_initialize
+  [10] LBM_freeGrid            [3] LBM_showGridStatistics [11] MAIN_parseCommandLine
+   [5] LBM_initializeGrid      [8] LBM_swapGrids          [12] MAIN_printInfo
+   [7] LBM_initializeSpecialCellsForLDC [6] MAIN_finalize

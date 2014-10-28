@@ -1,0 +1,443 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ks/call  Ks/call  name    
+ 97.71   1870.37  1870.37   500000     0.00     0.00  P7Viterbi
+  0.98   1889.07    18.70 277243628     0.00     0.00  FChoose
+  0.94   1907.03    17.96 277975300     0.00     0.00  sre_random
+  0.13   1909.53     2.50   500000     0.00     0.00  RandomSequence
+  0.10   1911.52     1.99 277243628     0.00     0.00  SymbolIndex
+  0.06   1912.69     1.17   500000     0.00     0.00  DigitizeSequence
+  0.01   1912.92     0.23        1     0.00     1.91  main_loop_serial
+  0.01   1913.12     0.20   500000     0.00     0.00  Scorify
+  0.01   1913.31     0.19   541551     0.00     0.00  Gaussrandom
+  0.01   1913.50     0.19       11     0.00     0.00  Strdup
+  0.01   1913.64     0.14   500000     0.00     0.00  P7ViterbiSize
+  0.01   1913.77     0.12        1     0.00     0.00  IncompleteGamma
+  0.00   1913.84     0.07   500000     0.00     0.00  ResizePlan7Matrix
+  0.00   1913.91     0.07                             DChoose
+  0.00   1913.98     0.07   500000     0.00     0.00  AddToHistogram
+  0.00   1914.04     0.06                             Free3DArray
+  0.00   1914.07     0.03        1     0.00     0.00  sre_srandom
+  0.00   1914.10     0.03                             FreeShadowMatrix
+  0.00   1914.12     0.01        1     0.00     0.00  CreatePlan7Matrix
+  0.00   1914.13     0.01        1     0.00     0.00  UnfitHistogram
+  0.00   1914.13     0.00  1000061     0.00     0.00  sre_malloc
+  0.00   1914.13     0.00     9810     0.00     0.00  ascii2prob
+  0.00   1914.13     0.00     9414     0.00     0.00  Score2Prob
+  0.00   1914.13     0.00     9388     0.00     0.00  Prob2Score
+  0.00   1914.13     0.00     4905     0.00     0.00  prob2ascii
+  0.00   1914.13     0.00     1004     0.00     0.00  FSum
+  0.00   1914.13     0.00      804     0.00     0.00  FNorm
+  0.00   1914.13     0.00      802     0.00     0.00  ExtremeValueE
+  0.00   1914.13     0.00      802     0.00     0.00  ExtremeValueP
+  0.00   1914.13     0.00      796     0.00     0.00  DegenerateSymbolScore
+  0.00   1914.13     0.00      200     0.00     0.00  FScale
+  0.00   1914.13     0.00       65     0.00     0.00  sre_realloc
+  0.00   1914.13     0.00       18     0.00     0.00  sre_toupper
+  0.00   1914.13     0.00       10     0.00     0.00  StringChop
+  0.00   1914.13     0.00        6     0.00     0.00  Getopt
+  0.00   1914.13     0.00        4     0.00     0.00  Lawless422
+  0.00   1914.13     0.00        4     0.00     0.00  SSIGetFilePosition
+  0.00   1914.13     0.00        4     0.00     0.00  set_degenerate
+  0.00   1914.13     0.00        3     0.00     0.00  HMMFileRead
+  0.00   1914.13     0.00        3     0.00     0.00  IsInt
+  0.00   1914.13     0.00        3     0.00     0.00  read_asc20hmm
+  0.00   1914.13     0.00        2     0.00     0.00  AllocPlan7Body
+  0.00   1914.13     0.00        2     0.00     0.00  AllocPlan7Shell
+  0.00   1914.13     0.00        2     0.00     0.00  FileExists
+  0.00   1914.13     0.00        2     0.00     0.00  FreePlan7
+  0.00   1914.13     0.00        2     0.00     0.00  IsReal
+  0.00   1914.13     0.00        2     0.00     0.00  Plan7Renormalize
+  0.00   1914.13     0.00        2     0.00     0.00  Plan7SetAccession
+  0.00   1914.13     0.00        2     0.00     0.00  Plan7SetDescription
+  0.00   1914.13     0.00        2     0.00     0.00  Plan7SetName
+  0.00   1914.13     0.00        2     0.00     0.00  s2upper
+  0.00   1914.13     0.00        1     0.00     0.00  AllocHistogram
+  0.00   1914.13     0.00        1     0.00     0.00  EVDCensoredFit
+  0.00   1914.13     0.00        1     0.00     0.00  ExtremeValueFitHistogram
+  0.00   1914.13     0.00        1     0.00     0.00  ExtremeValueSetHistogram
+  0.00   1914.13     0.00        1     0.00     0.00  FreeHistogram
+  0.00   1914.13     0.00        1     0.00     0.00  FreePlan7Matrix
+  0.00   1914.13     0.00        1     0.00     0.00  Gammln
+  0.00   1914.13     0.00        1     0.00     0.00  HMMERBanner
+  0.00   1914.13     0.00        1     0.00     0.00  HMMFileClose
+  0.00   1914.13     0.00        1     0.00     0.00  HMMFileOpen
+  0.00   1914.13     0.00        1     0.00     0.00  HMMFileRewind
+  0.00   1914.13     0.00        1     0.00     0.00  P7DefaultNullModel
+  0.00   1914.13     0.00        1     0.00     0.00  P7Logoddsify
+  0.00   1914.13     0.00        1     0.00     0.00  Plan7ComlogAppend
+  0.00   1914.13     0.00        1     0.00     0.00  SSIOpen
+  0.00   1914.13     0.00        1     0.00     0.00  SSIRecommendMode
+  0.00   1914.13     0.00        1     0.00     0.00  SetAlphabet
+  0.00   1914.13     0.00        1     0.00     0.00  SqdClean
+  0.00   1914.13     0.00        1     0.00     0.00  WriteAscHMM
+  0.00   1914.13     0.00        1     0.00     1.91  hmmcalibrate
+  0.00   1914.13     0.00        1     0.00     0.00  multiline
+
+			Call graph
+
+
+granularity: each sample hit covers 4 byte(s) for 0.00% of 1914.13 seconds
+
+index % time    self  children    called     name
+                0.00 1913.96       1/1           main [2]
+[1]    100.0    0.00 1913.96       1         hmmcalibrate [1]
+                0.23 1913.40       1/1           main_loop_serial [3]
+                0.00    0.17       3/3           HMMFileRead [13]
+                0.00    0.14       1/1           ExtremeValueFitHistogram [16]
+                0.00    0.02       1/1           WriteAscHMM [28]
+                0.00    0.00       6/6           Getopt [46]
+                0.00    0.00       3/1000061     sre_malloc [32]
+                0.00    0.00       2/2           FileExists [53]
+                0.00    0.00       2/2           FreePlan7 [54]
+                0.00    0.00       1/1           HMMFileOpen [65]
+                0.00    0.00       1/1           HMMERBanner [63]
+                0.00    0.00       1/1           FreeHistogram [60]
+                0.00    0.00       1/1           HMMFileRewind [66]
+                0.00    0.00       1/1           Plan7ComlogAppend [69]
+                0.00    0.00       1/1           HMMFileClose [64]
+                0.00    0.00       1/1           SqdClean [73]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00 1913.96                 main [2]
+                0.00 1913.96       1/1           hmmcalibrate [1]
+-----------------------------------------------
+                0.23 1913.40       1/1           hmmcalibrate [1]
+[3]    100.0    0.23 1913.40       1         main_loop_serial [3]
+             1870.37    0.28  500000/500000      P7Viterbi [4]
+                2.50   36.62  500000/500000      RandomSequence [5]
+                1.17    1.99  500000/500000      DigitizeSequence [8]
+                0.19    0.04  541551/541551      Gaussrandom [10]
+                0.14    0.00  500000/500000      P7ViterbiSize [15]
+                0.07    0.00  500000/500000      AddToHistogram [21]
+                0.03    0.00       1/1           sre_srandom [26]
+                0.01    0.00       1/1           CreatePlan7Matrix [30]
+                0.00    0.00       1/1           P7Logoddsify [68]
+                0.00    0.00       1/1           P7DefaultNullModel [67]
+                0.00    0.00       1/1           AllocHistogram [58]
+                0.00    0.00       1/1           FreePlan7Matrix [61]
+-----------------------------------------------
+             1870.37    0.28  500000/500000      main_loop_serial [3]
+[4]     97.7 1870.37    0.28  500000         P7Viterbi [4]
+                0.20    0.00  500000/500000      Scorify [11]
+                0.07    0.00  500000/500000      ResizePlan7Matrix [19]
+-----------------------------------------------
+                2.50   36.62  500000/500000      main_loop_serial [3]
+[5]      2.0    2.50   36.62  500000         RandomSequence [5]
+               18.70   17.92 277243628/277243628     FChoose [6]
+                0.00    0.00  500000/1000061     sre_malloc [32]
+-----------------------------------------------
+               18.70   17.92 277243628/277243628     RandomSequence [5]
+[6]      1.9   18.70   17.92 277243628         FChoose [6]
+               17.92    0.00 277307965/277975300     sre_random [7]
+-----------------------------------------------
+                0.04    0.00  667335/277975300     Gaussrandom [10]
+               17.92    0.00 277307965/277975300     FChoose [6]
+[7]      0.9   17.96    0.00 277975300         sre_random [7]
+-----------------------------------------------
+                1.17    1.99  500000/500000      main_loop_serial [3]
+[8]      0.2    1.17    1.99  500000         DigitizeSequence [8]
+                1.99    0.00 277243628/277243628     SymbolIndex [9]
+                0.00    0.00  500000/1000061     sre_malloc [32]
+-----------------------------------------------
+                1.99    0.00 277243628/277243628     DigitizeSequence [8]
+[9]      0.1    1.99    0.00 277243628         SymbolIndex [9]
+-----------------------------------------------
+                0.19    0.04  541551/541551      main_loop_serial [3]
+[10]     0.0    0.19    0.04  541551         Gaussrandom [10]
+                0.04    0.00  667335/277975300     sre_random [7]
+-----------------------------------------------
+                0.20    0.00  500000/500000      P7Viterbi [4]
+[11]     0.0    0.20    0.00  500000         Scorify [11]
+-----------------------------------------------
+                0.02    0.00       1/11          multiline [29]
+                0.03    0.00       2/11          Plan7SetName [25]
+                0.03    0.00       2/11          Plan7SetAccession [23]
+                0.03    0.00       2/11          Plan7SetDescription [24]
+                0.07    0.00       4/11          read_asc20hmm [14]
+[12]     0.0    0.19    0.00      11         Strdup [12]
+-----------------------------------------------
+                0.00    0.17       3/3           hmmcalibrate [1]
+[13]     0.0    0.00    0.17       3         HMMFileRead [13]
+                0.00    0.17       3/3           read_asc20hmm [14]
+                0.00    0.00       3/4           SSIGetFilePosition [48]
+-----------------------------------------------
+                0.00    0.17       3/3           HMMFileRead [13]
+[14]     0.0    0.00    0.17       3         read_asc20hmm [14]
+                0.07    0.00       4/11          Strdup [12]
+                0.00    0.03       2/2           Plan7SetName [25]
+                0.00    0.03       2/2           Plan7SetAccession [23]
+                0.00    0.03       2/2           Plan7SetDescription [24]
+                0.00    0.00    9810/9810        ascii2prob [33]
+                0.00    0.00       6/18          sre_toupper [44]
+                0.00    0.00       4/10          StringChop [45]
+                0.00    0.00       2/2           AllocPlan7Shell [52]
+                0.00    0.00       2/2           s2upper [57]
+                0.00    0.00       2/2           AllocPlan7Body [51]
+                0.00    0.00       2/2           Plan7Renormalize [56]
+                0.00    0.00       1/1           SetAlphabet [72]
+-----------------------------------------------
+                0.14    0.00  500000/500000      main_loop_serial [3]
+[15]     0.0    0.14    0.00  500000         P7ViterbiSize [15]
+-----------------------------------------------
+                0.00    0.14       1/1           hmmcalibrate [1]
+[16]     0.0    0.00    0.14       1         ExtremeValueFitHistogram [16]
+                0.00    0.14       1/1           ExtremeValueSetHistogram [17]
+                0.00    0.00       2/1000061     sre_malloc [32]
+                0.00    0.00       1/1           EVDCensoredFit [59]
+-----------------------------------------------
+                0.00    0.14       1/1           ExtremeValueFitHistogram [16]
+[17]     0.0    0.00    0.14       1         ExtremeValueSetHistogram [17]
+                0.12    0.00       1/1           IncompleteGamma [18]
+                0.01    0.00       1/1           UnfitHistogram [31]
+                0.00    0.00     802/802         ExtremeValueE [39]
+                0.00    0.00       1/1000061     sre_malloc [32]
+-----------------------------------------------
+                0.12    0.00       1/1           ExtremeValueSetHistogram [17]
+[18]     0.0    0.12    0.00       1         IncompleteGamma [18]
+                0.00    0.00       1/1           Gammln [62]
+-----------------------------------------------
+                0.07    0.00  500000/500000      P7Viterbi [4]
+[19]     0.0    0.07    0.00  500000         ResizePlan7Matrix [19]
+                0.00    0.00      64/65          sre_realloc [43]
+-----------------------------------------------
+                                                 <spontaneous>
+[20]     0.0    0.07    0.00                 DChoose [20]
+-----------------------------------------------
+                0.07    0.00  500000/500000      main_loop_serial [3]
+[21]     0.0    0.07    0.00  500000         AddToHistogram [21]
+-----------------------------------------------
+                                                 <spontaneous>
+[22]     0.0    0.06    0.00                 Free3DArray [22]
+-----------------------------------------------
+                0.00    0.03       2/2           read_asc20hmm [14]
+[23]     0.0    0.00    0.03       2         Plan7SetAccession [23]
+                0.03    0.00       2/11          Strdup [12]
+                0.00    0.00       2/10          StringChop [45]
+-----------------------------------------------
+                0.00    0.03       2/2           read_asc20hmm [14]
+[24]     0.0    0.00    0.03       2         Plan7SetDescription [24]
+                0.03    0.00       2/11          Strdup [12]
+                0.00    0.00       2/10          StringChop [45]
+-----------------------------------------------
+                0.00    0.03       2/2           read_asc20hmm [14]
+[25]     0.0    0.00    0.03       2         Plan7SetName [25]
+                0.03    0.00       2/11          Strdup [12]
+                0.00    0.00       2/10          StringChop [45]
+-----------------------------------------------
+                0.03    0.00       1/1           main_loop_serial [3]
+[26]     0.0    0.03    0.00       1         sre_srandom [26]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     0.0    0.03    0.00                 FreeShadowMatrix [27]
+-----------------------------------------------
+                0.00    0.02       1/1           hmmcalibrate [1]
+[28]     0.0    0.00    0.02       1         WriteAscHMM [28]
+                0.00    0.02       1/1           multiline [29]
+                0.00    0.00    4905/4905        prob2ascii [36]
+-----------------------------------------------
+                0.00    0.02       1/1           WriteAscHMM [28]
+[29]     0.0    0.00    0.02       1         multiline [29]
+                0.02    0.00       1/11          Strdup [12]
+-----------------------------------------------
+                0.01    0.00       1/1           main_loop_serial [3]
+[30]     0.0    0.01    0.00       1         CreatePlan7Matrix [30]
+                0.00    0.00       9/1000061     sre_malloc [32]
+-----------------------------------------------
+                0.01    0.00       1/1           ExtremeValueSetHistogram [17]
+[31]     0.0    0.01    0.00       1         UnfitHistogram [31]
+-----------------------------------------------
+                0.00    0.00       1/1000061     ExtremeValueSetHistogram [17]
+                0.00    0.00       2/1000061     AllocHistogram [58]
+                0.00    0.00       2/1000061     ExtremeValueFitHistogram [16]
+                0.00    0.00       2/1000061     HMMFileOpen [65]
+                0.00    0.00       2/1000061     AllocPlan7Shell [52]
+                0.00    0.00       3/1000061     hmmcalibrate [1]
+                0.00    0.00       9/1000061     CreatePlan7Matrix [30]
+                0.00    0.00      40/1000061     AllocPlan7Body [51]
+                0.00    0.00  500000/1000061     DigitizeSequence [8]
+                0.00    0.00  500000/1000061     RandomSequence [5]
+[32]     0.0    0.00    0.00 1000061         sre_malloc [32]
+-----------------------------------------------
+                0.00    0.00    9810/9810        read_asc20hmm [14]
+[33]     0.0    0.00    0.00    9810         ascii2prob [33]
+                0.00    0.00    9414/9414        Score2Prob [34]
+-----------------------------------------------
+                0.00    0.00    9414/9414        ascii2prob [33]
+[34]     0.0    0.00    0.00    9414         Score2Prob [34]
+-----------------------------------------------
+                0.00    0.00    4681/9388        P7Logoddsify [68]
+                0.00    0.00    4707/9388        prob2ascii [36]
+[35]     0.0    0.00    0.00    9388         Prob2Score [35]
+-----------------------------------------------
+                0.00    0.00    4905/4905        WriteAscHMM [28]
+[36]     0.0    0.00    0.00    4905         prob2ascii [36]
+                0.00    0.00    4707/9388        Prob2Score [35]
+-----------------------------------------------
+                0.00    0.00     200/1004        Plan7Renormalize [56]
+                0.00    0.00     804/1004        FNorm [38]
+[37]     0.0    0.00    0.00    1004         FSum [37]
+-----------------------------------------------
+                0.00    0.00     804/804         Plan7Renormalize [56]
+[38]     0.0    0.00    0.00     804         FNorm [38]
+                0.00    0.00     804/1004        FSum [37]
+-----------------------------------------------
+                0.00    0.00     802/802         ExtremeValueSetHistogram [17]
+[39]     0.0    0.00    0.00     802         ExtremeValueE [39]
+                0.00    0.00     802/802         ExtremeValueP [40]
+-----------------------------------------------
+                0.00    0.00     802/802         ExtremeValueE [39]
+[40]     0.0    0.00    0.00     802         ExtremeValueP [40]
+-----------------------------------------------
+                0.00    0.00     796/796         P7Logoddsify [68]
+[41]     0.0    0.00    0.00     796         DegenerateSymbolScore [41]
+-----------------------------------------------
+                0.00    0.00     200/200         Plan7Renormalize [56]
+[42]     0.0    0.00    0.00     200         FScale [42]
+-----------------------------------------------
+                0.00    0.00       1/65          Plan7ComlogAppend [69]
+                0.00    0.00      64/65          ResizePlan7Matrix [19]
+[43]     0.0    0.00    0.00      65         sre_realloc [43]
+-----------------------------------------------
+                0.00    0.00       6/18          read_asc20hmm [14]
+                0.00    0.00      12/18          s2upper [57]
+[44]     0.0    0.00    0.00      18         sre_toupper [44]
+-----------------------------------------------
+                0.00    0.00       2/10          Plan7SetName [25]
+                0.00    0.00       2/10          Plan7SetAccession [23]
+                0.00    0.00       2/10          Plan7SetDescription [24]
+                0.00    0.00       4/10          read_asc20hmm [14]
+[45]     0.0    0.00    0.00      10         StringChop [45]
+-----------------------------------------------
+                0.00    0.00       6/6           hmmcalibrate [1]
+[46]     0.0    0.00    0.00       6         Getopt [46]
+                0.00    0.00       3/3           IsInt [50]
+                0.00    0.00       2/2           IsReal [55]
+-----------------------------------------------
+                0.00    0.00       4/4           EVDCensoredFit [59]
+[47]     0.0    0.00    0.00       4         Lawless422 [47]
+-----------------------------------------------
+                0.00    0.00       1/4           HMMFileOpen [65]
+                0.00    0.00       3/4           HMMFileRead [13]
+[48]     0.0    0.00    0.00       4         SSIGetFilePosition [48]
+-----------------------------------------------
+                0.00    0.00       4/4           SetAlphabet [72]
+[49]     0.0    0.00    0.00       4         set_degenerate [49]
+-----------------------------------------------
+                0.00    0.00       3/3           Getopt [46]
+[50]     0.0    0.00    0.00       3         IsInt [50]
+-----------------------------------------------
+                0.00    0.00       2/2           read_asc20hmm [14]
+[51]     0.0    0.00    0.00       2         AllocPlan7Body [51]
+                0.00    0.00      40/1000061     sre_malloc [32]
+-----------------------------------------------
+                0.00    0.00       2/2           read_asc20hmm [14]
+[52]     0.0    0.00    0.00       2         AllocPlan7Shell [52]
+                0.00    0.00       2/1000061     sre_malloc [32]
+-----------------------------------------------
+                0.00    0.00       2/2           hmmcalibrate [1]
+[53]     0.0    0.00    0.00       2         FileExists [53]
+-----------------------------------------------
+                0.00    0.00       2/2           hmmcalibrate [1]
+[54]     0.0    0.00    0.00       2         FreePlan7 [54]
+-----------------------------------------------
+                0.00    0.00       2/2           Getopt [46]
+[55]     0.0    0.00    0.00       2         IsReal [55]
+-----------------------------------------------
+                0.00    0.00       2/2           read_asc20hmm [14]
+[56]     0.0    0.00    0.00       2         Plan7Renormalize [56]
+                0.00    0.00     804/804         FNorm [38]
+                0.00    0.00     200/1004        FSum [37]
+                0.00    0.00     200/200         FScale [42]
+-----------------------------------------------
+                0.00    0.00       2/2           read_asc20hmm [14]
+[57]     0.0    0.00    0.00       2         s2upper [57]
+                0.00    0.00      12/18          sre_toupper [44]
+-----------------------------------------------
+                0.00    0.00       1/1           main_loop_serial [3]
+[58]     0.0    0.00    0.00       1         AllocHistogram [58]
+                0.00    0.00       2/1000061     sre_malloc [32]
+-----------------------------------------------
+                0.00    0.00       1/1           ExtremeValueFitHistogram [16]
+[59]     0.0    0.00    0.00       1         EVDCensoredFit [59]
+                0.00    0.00       4/4           Lawless422 [47]
+-----------------------------------------------
+                0.00    0.00       1/1           hmmcalibrate [1]
+[60]     0.0    0.00    0.00       1         FreeHistogram [60]
+-----------------------------------------------
+                0.00    0.00       1/1           main_loop_serial [3]
+[61]     0.0    0.00    0.00       1         FreePlan7Matrix [61]
+-----------------------------------------------
+                0.00    0.00       1/1           IncompleteGamma [18]
+[62]     0.0    0.00    0.00       1         Gammln [62]
+-----------------------------------------------
+                0.00    0.00       1/1           hmmcalibrate [1]
+[63]     0.0    0.00    0.00       1         HMMERBanner [63]
+-----------------------------------------------
+                0.00    0.00       1/1           hmmcalibrate [1]
+[64]     0.0    0.00    0.00       1         HMMFileClose [64]
+-----------------------------------------------
+                0.00    0.00       1/1           hmmcalibrate [1]
+[65]     0.0    0.00    0.00       1         HMMFileOpen [65]
+                0.00    0.00       2/1000061     sre_malloc [32]
+                0.00    0.00       1/1           SSIRecommendMode [71]
+                0.00    0.00       1/1           SSIOpen [70]
+                0.00    0.00       1/4           SSIGetFilePosition [48]
+-----------------------------------------------
+                0.00    0.00       1/1           hmmcalibrate [1]
+[66]     0.0    0.00    0.00       1         HMMFileRewind [66]
+-----------------------------------------------
+                0.00    0.00       1/1           main_loop_serial [3]
+[67]     0.0    0.00    0.00       1         P7DefaultNullModel [67]
+-----------------------------------------------
+                0.00    0.00       1/1           main_loop_serial [3]
+[68]     0.0    0.00    0.00       1         P7Logoddsify [68]
+                0.00    0.00    4681/9388        Prob2Score [35]
+                0.00    0.00     796/796         DegenerateSymbolScore [41]
+-----------------------------------------------
+                0.00    0.00       1/1           hmmcalibrate [1]
+[69]     0.0    0.00    0.00       1         Plan7ComlogAppend [69]
+                0.00    0.00       1/65          sre_realloc [43]
+-----------------------------------------------
+                0.00    0.00       1/1           HMMFileOpen [65]
+[70]     0.0    0.00    0.00       1         SSIOpen [70]
+-----------------------------------------------
+                0.00    0.00       1/1           HMMFileOpen [65]
+[71]     0.0    0.00    0.00       1         SSIRecommendMode [71]
+-----------------------------------------------
+                0.00    0.00       1/1           read_asc20hmm [14]
+[72]     0.0    0.00    0.00       1         SetAlphabet [72]
+                0.00    0.00       4/4           set_degenerate [49]
+-----------------------------------------------
+                0.00    0.00       1/1           hmmcalibrate [1]
+[73]     0.0    0.00    0.00       1         SqdClean [73]
+-----------------------------------------------
+
+Index by function name
+
+  [21] AddToHistogram         [10] Gaussrandom            [70] SSIOpen
+  [58] AllocHistogram         [46] Getopt                 [71] SSIRecommendMode
+  [51] AllocPlan7Body         [63] HMMERBanner            [34] Score2Prob
+  [52] AllocPlan7Shell        [64] HMMFileClose           [11] Scorify
+  [30] CreatePlan7Matrix      [65] HMMFileOpen            [72] SetAlphabet
+  [20] DChoose                [13] HMMFileRead            [73] SqdClean
+  [41] DegenerateSymbolScore  [66] HMMFileRewind          [12] Strdup
+   [8] DigitizeSequence       [18] IncompleteGamma        [45] StringChop
+  [59] EVDCensoredFit         [50] IsInt                   [9] SymbolIndex
+  [39] ExtremeValueE          [55] IsReal                 [31] UnfitHistogram
+  [16] ExtremeValueFitHistogram [47] Lawless422           [28] WriteAscHMM
+  [40] ExtremeValueP          [67] P7DefaultNullModel     [33] ascii2prob
+  [17] ExtremeValueSetHistogram [68] P7Logoddsify          [1] hmmcalibrate
+   [6] FChoose                 [4] P7Viterbi               [3] main_loop_serial
+  [38] FNorm                  [15] P7ViterbiSize          [29] multiline
+  [42] FScale                 [69] Plan7ComlogAppend      [36] prob2ascii
+  [37] FSum                   [56] Plan7Renormalize       [14] read_asc20hmm
+  [53] FileExists             [23] Plan7SetAccession      [57] s2upper
+  [22] Free3DArray            [24] Plan7SetDescription    [49] set_degenerate
+  [60] FreeHistogram          [25] Plan7SetName           [32] sre_malloc
+  [54] FreePlan7              [35] Prob2Score              [7] sre_random
+  [61] FreePlan7Matrix         [5] RandomSequence         [43] sre_realloc
+  [27] FreeShadowMatrix       [19] ResizePlan7Matrix      [26] sre_srandom
+  [62] Gammln                 [48] SSIGetFilePosition     [44] sre_toupper

@@ -1,0 +1,667 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 12.80    185.88   185.88    71136     0.00     0.00  ComputeNonbondedUtil::calc_pair_energy_fullelect(nonbonded*)
+ 12.21    363.13   177.25    71136     0.00     0.00  ComputeNonbondedUtil::calc_pair_fullelect(nonbonded*)
+ 11.07    523.79   160.66    71136     0.00     0.00  ComputeNonbondedUtil::calc_pair_energy_merge_fullelect(nonbonded*)
+ 10.78    680.30   156.51    71136     0.00     0.00  ComputeNonbondedUtil::calc_pair_energy(nonbonded*)
+ 10.49    832.53   152.23    71136     0.00     0.00  ComputeNonbondedUtil::calc_pair_merge_fullelect(nonbonded*)
+ 10.35    982.80   150.27    71136     0.00     0.00  ComputeNonbondedUtil::calc_pair(nonbonded*)
+  6.04   1070.52    87.72     5472     0.02     0.02  ComputeNonbondedUtil::calc_self_energy_fullelect(nonbonded*)
+  5.52   1150.62    80.10     5472     0.01     0.02  ComputeNonbondedUtil::calc_self_fullelect(nonbonded*)
+  4.73   1219.33    68.71     5472     0.01     0.01  ComputeNonbondedUtil::calc_self_energy_merge_fullelect(nonbonded*)
+  4.47   1284.28    64.95     5472     0.01     0.01  ComputeNonbondedUtil::calc_self_energy(nonbonded*)
+  4.36   1347.60    63.32     5472     0.01     0.01  ComputeNonbondedUtil::calc_self_merge_fullelect(nonbonded*)
+  4.33   1410.42    62.82     5472     0.01     0.01  ComputeNonbondedUtil::calc_self(nonbonded*)
+  1.87   1437.52    27.10 3423870452     0.00     0.00  Molecule::atomvdwtype(int) const
+  0.69   1447.60    10.08 188070318     0.00     0.00  Molecule::get_excl_check_for_atom(int) const
+  0.05   1448.34     0.74 128928024     0.00     0.00  LJTable::table_row(unsigned int) const
+  0.04   1448.97     0.63    32832     0.00     0.00  Patch::setforces(Vector*, Vector*)
+  0.03   1449.46     0.49 63187154     0.00     0.00  Vector::operator+=(Vector const&)
+  0.03   1449.92     0.46 63081219     0.00     0.00  Vector::length2() const
+  0.03   1450.36     0.44  2225643     0.00     0.00  Vector::Vector()
+  0.02   1450.67     0.31      228     0.00     0.01  PatchList::setresults(ResultSet*)
+  0.02   1450.93     0.26 21028933     0.00     0.00  Vector::Vector(double, double, double)
+  0.01   1451.14     0.21 21027406     0.00     0.00  operator+(Vector const&, Vector const&)
+  0.01   1451.30     0.16 42054828     0.00     0.00  Vector::operator=(double const&)
+  0.01   1451.45     0.15    32832     0.00     0.00  Patch::zeroforces()
+  0.01   1451.53     0.08      228     0.00     6.50  ComputeList::runComputes(PatchList*)
+  0.01   1451.61     0.07   426816     0.00     0.00  PairCompute::doWork(PatchList*)
+  0.00   1451.67     0.07     5472     0.00     0.00  Patch::moveatoms()
+  0.00   1451.72     0.05   853632     0.00     0.00  Patch::image(int, Lattice&)
+  0.00   1451.77     0.04    32832     0.00     0.01  SelfCompute::doWork(PatchList*)
+  0.00   1451.79     0.02        1     0.02     0.09  PatchList::readfile(_IO_FILE*)
+  0.00   1451.79     0.01                             frame_dummy
+  0.00   1451.79     0.00   459648     0.00     0.00  nonbonded::nonbonded()
+  0.00   1451.79     0.00   198162     0.00     0.00  CompAtom::CompAtom()
+  0.00   1451.79     0.00   105938     0.00     0.00  CompAtom::operator=(CompAtom const&)
+  0.00   1451.79     0.00    27850     0.00     0.00  ObjectArena<char>::getNewArray(int)
+  0.00   1451.79     0.00    11020     0.00     0.00  equal(double, double)
+  0.00   1451.79     0.00     3888     0.00     0.00  Lattice::destroy(CompAtom**, int) const
+  0.00   1451.79     0.00     3420     0.00     0.00  Vector::length() const
+  0.00   1451.79     0.00     2016     0.00     0.00  ComputeNonbondedUtil::ComputeNonbondedUtil()
+  0.00   1451.79     0.00     2016     0.00     0.00  ComputeNonbondedUtil::~ComputeNonbondedUtil()
+  0.00   1451.79     0.00     1872     0.00     0.00  PairCompute::PairCompute()
+  0.00   1451.79     0.00     1872     0.00     0.00  PairCompute::~PairCompute()
+  0.00   1451.79     0.00     1634     0.00     0.00  ResizeArrayRaw<char*>::size() const
+  0.00   1451.79     0.00     1140     0.00     0.00  ResultSet::check()
+  0.00   1451.79     0.00      570     0.00     0.00  ResultSet::compare(ResultSet&)
+  0.00   1451.79     0.00      545     0.00     0.00  ResizeArray<char*>::size() const
+  0.00   1451.79     0.00      544     0.00     0.00  ResizeArray<char*>::add(char* const&)
+  0.00   1451.79     0.00      544     0.00     0.00  ResizeArray<char*>::operator[](int)
+  0.00   1451.79     0.00      544     0.00     0.00  ResizeArrayRaw<char*>::ins(char* const&, int)
+  0.00   1451.79     0.00      544     0.00     0.00  ResizeArrayRaw<char*>::resizeRaw(int)
+  0.00   1451.79     0.00      544     0.00     0.00  operator new(unsigned int, void*)
+  0.00   1451.79     0.00      501     0.00     0.00  operator*(double const&, Vector const&)
+  0.00   1451.79     0.00      456     0.00     0.00  equal(double*, double*)
+  0.00   1451.79     0.00      443     0.00     0.00  parse_param(char const*, char const*, char const*, int&)
+  0.00   1451.79     0.00      311     0.00     0.00  Lattice::create(CompAtom*, int, int) const
+  0.00   1451.79     0.00      298     0.00     0.00  parse_param(char const*, char const*, char const*, double&)
+  0.00   1451.79     0.00      266     0.00     0.00  equal(double*, double*, double*, double*)
+  0.00   1451.79     0.00      228     0.00     0.00  PatchList::zeroresults()
+  0.00   1451.79     0.00      228     0.00     0.00  ResultSet::writefile(_IO_FILE*)
+  0.00   1451.79     0.00      162     0.00     0.00  parse_param(char const*, char const*, char const*, Vector&)
+  0.00   1451.79     0.00      145     0.00     0.00  Lattice::Lattice()
+  0.00   1451.79     0.00      144     0.00     0.00  SelfCompute::SelfCompute()
+  0.00   1451.79     0.00      144     0.00     0.00  SelfCompute::~SelfCompute()
+  0.00   1451.79     0.00      144     0.00     0.00  Patch::clearimages()
+  0.00   1451.79     0.00      144     0.00     0.00  Patch::readfile(_IO_FILE*)
+  0.00   1451.79     0.00      144     0.00     0.00  Patch::Patch()
+  0.00   1451.79     0.00      144     0.00     0.00  Patch::~Patch()
+  0.00   1451.79     0.00       42     0.00     0.00  SimParameters::setparam(char const*, char const*)
+  0.00   1451.79     0.00       38     0.00     0.00  PatchList::moveatoms()
+  0.00   1451.79     0.00        7     0.00     0.04  ResultSet::ResultSet(int)
+  0.00   1451.79     0.00        7     0.00     0.00  ResultSet::~ResultSet()
+  0.00   1451.79     0.00        4     0.00     0.00  cross(Vector const&, Vector const&)
+  0.00   1451.79     0.00        4     0.00     0.00  Vector::set(char const*)
+  0.00   1451.79     0.00        4     0.00     0.00  operator*(Vector const&, Vector const&)
+  0.00   1451.79     0.00        3     0.00     0.00  operator/(Vector const&, double const&)
+  0.00   1451.79     0.00        1     0.00     0.00  ComputeList::readfile(_IO_FILE*, PatchList*)
+  0.00   1451.79     0.00        1     0.00     0.00  ComputeList::ComputeList()
+  0.00   1451.79     0.00        1     0.00     0.00  ComputeList::~ComputeList()
+  0.00   1451.79     0.00        1     0.00     0.00  ObjectArena<char>::ObjectArena()
+  0.00   1451.79     0.00        1     0.00     0.00  ObjectArena<char>::~ObjectArena()
+  0.00   1451.79     0.00        1     0.00     0.00  ResizeArray<char*>::ResizeArray()
+  0.00   1451.79     0.00        1     0.00     0.00  ResizeArray<char*>::~ResizeArray()
+  0.00   1451.79     0.00        1     0.00     0.00  SimParameters::readfile(_IO_FILE*)
+  0.00   1451.79     0.00        1     0.00     0.00  SimParameters::SimParameters()
+  0.00   1451.79     0.00        1     0.00     0.00  SimParameters::~SimParameters()
+  0.00   1451.79     0.00        1     0.00     0.00  ResizeArrayRaw<char*>::resize(int)
+  0.00   1451.79     0.00        1     0.00     0.00  ResizeArrayRaw<char*>::ResizeArrayRaw()
+  0.00   1451.79     0.00        1     0.00     0.00  ResizeArrayRaw<char*>::~ResizeArrayRaw()
+  0.00   1451.79     0.00        1     0.00     0.00  ComputeNonbondedUtil::select(SimParameters*, Molecule*, LJTable*)
+  0.00   1451.79     0.00        1     0.00     0.00  LJTable::readfile(_IO_FILE*)
+  0.00   1451.79     0.00        1     0.00     0.00  LJTable::LJTable()
+  0.00   1451.79     0.00        1     0.00     0.00  LJTable::~LJTable()
+  0.00   1451.79     0.00        1     0.00     0.00  Lattice::recalculate()
+  0.00   1451.79     0.00        1     0.00     0.00  Lattice::set(Vector, Vector, Vector, Vector)
+  0.00   1451.79     0.00        1     0.00     0.00  Molecule::readfile(_IO_FILE*)
+  0.00   1451.79     0.00        1     0.00     0.00  Molecule::Molecule()
+  0.00   1451.79     0.00        1     0.00     0.00  Molecule::~Molecule()
+  0.00   1451.79     0.00        1     0.00     0.00  PatchList::PatchList(Lattice&)
+  0.00   1451.79     0.00        1     0.00     0.00  PatchList::~PatchList()
+  0.00   1451.79     0.00        1     0.00     0.00  Lattice::volume() const
+
+			Call graph
+
+
+granularity: each sample hit covers 4 byte(s) for 0.00% of 1485.78 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00 1485.78                 main [1]
+                0.08 1482.61     228/228         ComputeList::runComputes(PatchList*) [2]
+                0.31    2.05     228/228         PatchList::setresults(ResultSet*) [19]
+                0.00    0.31     228/228         PatchList::zeroresults() [27]
+                0.00    0.26       7/7           ResultSet::ResultSet(int) [29]
+                0.02    0.07       1/1           PatchList::readfile(_IO_FILE*) [31]
+                0.00    0.07      38/38          PatchList::moveatoms() [36]
+                0.00    0.00       1/1           PatchList::~PatchList() [43]
+                0.00    0.00       1/1           SimParameters::SimParameters() [45]
+                0.00    0.00       1/1           SimParameters::readfile(_IO_FILE*) [46]
+                0.00    0.00     570/570         ResultSet::compare(ResultSet&) [68]
+                0.00    0.00     228/228         ResultSet::writefile(_IO_FILE*) [79]
+                0.00    0.00       7/7           ResultSet::~ResultSet() [85]
+                0.00    0.00       1/1           LJTable::LJTable() [101]
+                0.00    0.00       1/1           LJTable::readfile(_IO_FILE*) [100]
+                0.00    0.00       1/1           Molecule::Molecule() [104]
+                0.00    0.00       1/1           Molecule::readfile(_IO_FILE*) [103]
+                0.00    0.00       1/1           ComputeNonbondedUtil::select(SimParameters*, Molecule*, LJTable*) [99]
+                0.00    0.00       1/1           PatchList::PatchList(Lattice&) [106]
+                0.00    0.00       1/1           ComputeList::ComputeList() [89]
+                0.00    0.00       1/1           ComputeList::readfile(_IO_FILE*, PatchList*) [88]
+                0.00    0.00       1/1           ComputeList::~ComputeList() [90]
+                0.00    0.00       1/1           Molecule::~Molecule() [105]
+                0.00    0.00       1/1           LJTable::~LJTable() [102]
+                0.00    0.00       1/1           SimParameters::~SimParameters() [95]
+-----------------------------------------------
+                0.08 1482.61     228/228         main [1]
+[2]     99.8    0.08 1482.61     228         ComputeList::runComputes(PatchList*) [2]
+                0.07 1028.52  426816/426816      PairCompute::doWork(PatchList*) [3]
+                0.04  453.98   32832/32832       SelfCompute::doWork(PatchList*) [4]
+-----------------------------------------------
+                0.07 1028.52  426816/426816      ComputeList::runComputes(PatchList*) [2]
+[3]     69.2    0.07 1028.52  426816         PairCompute::doWork(PatchList*) [3]
+              185.88    7.59   71136/71136       ComputeNonbondedUtil::calc_pair_energy_fullelect(nonbonded*) [5]
+              177.25    7.59   71136/71136       ComputeNonbondedUtil::calc_pair_fullelect(nonbonded*) [6]
+              160.66    7.59   71136/71136       ComputeNonbondedUtil::calc_pair_energy_merge_fullelect(nonbonded*) [7]
+              156.51    7.59   71136/71136       ComputeNonbondedUtil::calc_pair_energy(nonbonded*) [8]
+              152.23    7.59   71136/71136       ComputeNonbondedUtil::calc_pair_merge_fullelect(nonbonded*) [9]
+              150.27    7.59   71136/71136       ComputeNonbondedUtil::calc_pair(nonbonded*) [10]
+                0.00    0.08  426816/459648      nonbonded::nonbonded() [32]
+                0.05    0.02  853632/853632      Patch::image(int, Lattice&) [34]
+-----------------------------------------------
+                0.04  453.98   32832/32832       ComputeList::runComputes(PatchList*) [2]
+[4]     30.6    0.04  453.98   32832         SelfCompute::doWork(PatchList*) [4]
+               87.72    4.39    5472/5472        ComputeNonbondedUtil::calc_self_energy_fullelect(nonbonded*) [11]
+               80.10    4.39    5472/5472        ComputeNonbondedUtil::calc_self_fullelect(nonbonded*) [12]
+               68.71    4.39    5472/5472        ComputeNonbondedUtil::calc_self_energy_merge_fullelect(nonbonded*) [13]
+               64.95    4.39    5472/5472        ComputeNonbondedUtil::calc_self_energy(nonbonded*) [14]
+               63.32    4.39    5472/5472        ComputeNonbondedUtil::calc_self_merge_fullelect(nonbonded*) [15]
+               62.82    4.39    5472/5472        ComputeNonbondedUtil::calc_self(nonbonded*) [16]
+                0.00    0.01   32832/459648      nonbonded::nonbonded() [32]
+-----------------------------------------------
+              185.88    7.59   71136/71136       PairCompute::doWork(PatchList*) [3]
+[5]     13.0  185.88    7.59   71136         ComputeNonbondedUtil::calc_pair_energy_fullelect(nonbonded*) [5]
+                6.00    0.00 757775308/3423870452     Molecule::atomvdwtype(int) const [17]
+                1.49    0.00 27846013/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.10    0.00 17988964/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+              177.25    7.59   71136/71136       PairCompute::doWork(PatchList*) [3]
+[6]     12.4  177.25    7.59   71136         ComputeNonbondedUtil::calc_pair_fullelect(nonbonded*) [6]
+                6.00    0.00 757775308/3423870452     Molecule::atomvdwtype(int) const [17]
+                1.49    0.00 27846013/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.10    0.00 17988964/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+              160.66    7.59   71136/71136       PairCompute::doWork(PatchList*) [3]
+[7]     11.3  160.66    7.59   71136         ComputeNonbondedUtil::calc_pair_energy_merge_fullelect(nonbonded*) [7]
+                6.00    0.00 757775308/3423870452     Molecule::atomvdwtype(int) const [17]
+                1.49    0.00 27846013/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.10    0.00 17988964/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+              156.51    7.59   71136/71136       PairCompute::doWork(PatchList*) [3]
+[8]     11.0  156.51    7.59   71136         ComputeNonbondedUtil::calc_pair_energy(nonbonded*) [8]
+                6.00    0.00 757775308/3423870452     Molecule::atomvdwtype(int) const [17]
+                1.49    0.00 27846013/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.10    0.00 17988964/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+              152.23    7.59   71136/71136       PairCompute::doWork(PatchList*) [3]
+[9]     10.8  152.23    7.59   71136         ComputeNonbondedUtil::calc_pair_merge_fullelect(nonbonded*) [9]
+                6.00    0.00 757775308/3423870452     Molecule::atomvdwtype(int) const [17]
+                1.49    0.00 27846013/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.10    0.00 17988964/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+              150.27    7.59   71136/71136       PairCompute::doWork(PatchList*) [3]
+[10]    10.6  150.27    7.59   71136         ComputeNonbondedUtil::calc_pair(nonbonded*) [10]
+                6.00    0.00 757775308/3423870452     Molecule::atomvdwtype(int) const [17]
+                1.49    0.00 27846013/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.10    0.00 17988964/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+               87.72    4.39    5472/5472        SelfCompute::doWork(PatchList*) [4]
+[11]     6.2   87.72    4.39    5472         ComputeNonbondedUtil::calc_self_energy_fullelect(nonbonded*) [11]
+                4.18    0.00 528697650/3423870452     Molecule::atomvdwtype(int) const [17]
+                0.19    0.00 3499040/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.02    0.00 3499040/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+               80.10    4.39    5472/5472        SelfCompute::doWork(PatchList*) [4]
+[12]     5.7   80.10    4.39    5472         ComputeNonbondedUtil::calc_self_fullelect(nonbonded*) [12]
+                4.18    0.00 528697650/3423870452     Molecule::atomvdwtype(int) const [17]
+                0.19    0.00 3499040/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.02    0.00 3499040/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+               68.71    4.39    5472/5472        SelfCompute::doWork(PatchList*) [4]
+[13]     4.9   68.71    4.39    5472         ComputeNonbondedUtil::calc_self_energy_merge_fullelect(nonbonded*) [13]
+                4.18    0.00 528697650/3423870452     Molecule::atomvdwtype(int) const [17]
+                0.19    0.00 3499040/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.02    0.00 3499040/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+               64.95    4.39    5472/5472        SelfCompute::doWork(PatchList*) [4]
+[14]     4.7   64.95    4.39    5472         ComputeNonbondedUtil::calc_self_energy(nonbonded*) [14]
+                4.18    0.00 528697650/3423870452     Molecule::atomvdwtype(int) const [17]
+                0.19    0.00 3499040/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.02    0.00 3499040/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+               63.32    4.39    5472/5472        SelfCompute::doWork(PatchList*) [4]
+[15]     4.6   63.32    4.39    5472         ComputeNonbondedUtil::calc_self_merge_fullelect(nonbonded*) [15]
+                4.18    0.00 528697650/3423870452     Molecule::atomvdwtype(int) const [17]
+                0.19    0.00 3499040/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.02    0.00 3499040/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+               62.82    4.39    5472/5472        SelfCompute::doWork(PatchList*) [4]
+[16]     4.5   62.82    4.39    5472         ComputeNonbondedUtil::calc_self(nonbonded*) [16]
+                4.18    0.00 528697650/3423870452     Molecule::atomvdwtype(int) const [17]
+                0.19    0.00 3499040/188070318     Molecule::get_excl_check_for_atom(int) const [18]
+                0.02    0.00 3499040/128928024     LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+                4.18    0.00 528697650/3423870452     ComputeNonbondedUtil::calc_self(nonbonded*) [16]
+                4.18    0.00 528697650/3423870452     ComputeNonbondedUtil::calc_self_energy(nonbonded*) [14]
+                4.18    0.00 528697650/3423870452     ComputeNonbondedUtil::calc_self_fullelect(nonbonded*) [12]
+                4.18    0.00 528697650/3423870452     ComputeNonbondedUtil::calc_self_energy_fullelect(nonbonded*) [11]
+                4.18    0.00 528697650/3423870452     ComputeNonbondedUtil::calc_self_merge_fullelect(nonbonded*) [15]
+                4.18    0.00 528697650/3423870452     ComputeNonbondedUtil::calc_self_energy_merge_fullelect(nonbonded*) [13]
+                6.00    0.00 757775308/3423870452     ComputeNonbondedUtil::calc_pair(nonbonded*) [10]
+                6.00    0.00 757775308/3423870452     ComputeNonbondedUtil::calc_pair_energy(nonbonded*) [8]
+                6.00    0.00 757775308/3423870452     ComputeNonbondedUtil::calc_pair_fullelect(nonbonded*) [6]
+                6.00    0.00 757775308/3423870452     ComputeNonbondedUtil::calc_pair_energy_fullelect(nonbonded*) [5]
+                6.00    0.00 757775308/3423870452     ComputeNonbondedUtil::calc_pair_merge_fullelect(nonbonded*) [9]
+                6.00    0.00 757775308/3423870452     ComputeNonbondedUtil::calc_pair_energy_merge_fullelect(nonbonded*) [7]
+[17]     4.1   61.09    0.00 3423870452         Molecule::atomvdwtype(int) const [17]
+-----------------------------------------------
+                0.19    0.00 3499040/188070318     ComputeNonbondedUtil::calc_self(nonbonded*) [16]
+                0.19    0.00 3499040/188070318     ComputeNonbondedUtil::calc_self_energy(nonbonded*) [14]
+                0.19    0.00 3499040/188070318     ComputeNonbondedUtil::calc_self_fullelect(nonbonded*) [12]
+                0.19    0.00 3499040/188070318     ComputeNonbondedUtil::calc_self_energy_fullelect(nonbonded*) [11]
+                0.19    0.00 3499040/188070318     ComputeNonbondedUtil::calc_self_merge_fullelect(nonbonded*) [15]
+                0.19    0.00 3499040/188070318     ComputeNonbondedUtil::calc_self_energy_merge_fullelect(nonbonded*) [13]
+                1.49    0.00 27846013/188070318     ComputeNonbondedUtil::calc_pair(nonbonded*) [10]
+                1.49    0.00 27846013/188070318     ComputeNonbondedUtil::calc_pair_energy(nonbonded*) [8]
+                1.49    0.00 27846013/188070318     ComputeNonbondedUtil::calc_pair_fullelect(nonbonded*) [6]
+                1.49    0.00 27846013/188070318     ComputeNonbondedUtil::calc_pair_energy_fullelect(nonbonded*) [5]
+                1.49    0.00 27846013/188070318     ComputeNonbondedUtil::calc_pair_merge_fullelect(nonbonded*) [9]
+                1.49    0.00 27846013/188070318     ComputeNonbondedUtil::calc_pair_energy_merge_fullelect(nonbonded*) [7]
+[18]     0.7   10.08    0.00 188070318         Molecule::get_excl_check_for_atom(int) const [18]
+-----------------------------------------------
+                0.31    2.05     228/228         main [1]
+[19]     0.2    0.31    2.05     228         PatchList::setresults(ResultSet*) [19]
+                0.63    0.00   32832/32832       Patch::setforces(Vector*, Vector*) [21]
+                0.49    0.00 63081216/63187154     Vector::operator+=(Vector const&) [22]
+                0.21    0.26 21027072/21027406     operator+(Vector const&, Vector const&) [23]
+                0.46    0.00 63081216/63081219     Vector::length2() const [24]
+                0.00    0.00     684/42054828     Vector::operator=(double const&) [30]
+-----------------------------------------------
+                0.02    0.00 3499040/128928024     ComputeNonbondedUtil::calc_self(nonbonded*) [16]
+                0.02    0.00 3499040/128928024     ComputeNonbondedUtil::calc_self_energy(nonbonded*) [14]
+                0.02    0.00 3499040/128928024     ComputeNonbondedUtil::calc_self_fullelect(nonbonded*) [12]
+                0.02    0.00 3499040/128928024     ComputeNonbondedUtil::calc_self_energy_fullelect(nonbonded*) [11]
+                0.02    0.00 3499040/128928024     ComputeNonbondedUtil::calc_self_merge_fullelect(nonbonded*) [15]
+                0.02    0.00 3499040/128928024     ComputeNonbondedUtil::calc_self_energy_merge_fullelect(nonbonded*) [13]
+                0.10    0.00 17988964/128928024     ComputeNonbondedUtil::calc_pair(nonbonded*) [10]
+                0.10    0.00 17988964/128928024     ComputeNonbondedUtil::calc_pair_energy(nonbonded*) [8]
+                0.10    0.00 17988964/128928024     ComputeNonbondedUtil::calc_pair_fullelect(nonbonded*) [6]
+                0.10    0.00 17988964/128928024     ComputeNonbondedUtil::calc_pair_energy_fullelect(nonbonded*) [5]
+                0.10    0.00 17988964/128928024     ComputeNonbondedUtil::calc_pair_merge_fullelect(nonbonded*) [9]
+                0.10    0.00 17988964/128928024     ComputeNonbondedUtil::calc_pair_energy_merge_fullelect(nonbonded*) [7]
+[20]     0.0    0.74    0.00 128928024         LJTable::table_row(unsigned int) const [20]
+-----------------------------------------------
+                0.63    0.00   32832/32832       PatchList::setresults(ResultSet*) [19]
+[21]     0.0    0.63    0.00   32832         Patch::setforces(Vector*, Vector*) [21]
+-----------------------------------------------
+                0.00    0.00  105938/63187154     Lattice::create(CompAtom*, int, int) const [38]
+                0.49    0.00 63081216/63187154     PatchList::setresults(ResultSet*) [19]
+[22]     0.0    0.49    0.00 63187154         Vector::operator+=(Vector const&) [22]
+-----------------------------------------------
+                0.00    0.00     334/21027406     Lattice::create(CompAtom*, int, int) const [38]
+                0.21    0.26 21027072/21027406     PatchList::setresults(ResultSet*) [19]
+[23]     0.0    0.21    0.26 21027406         operator+(Vector const&, Vector const&) [23]
+                0.26    0.00 21027406/21028933     Vector::Vector(double, double, double) [28]
+-----------------------------------------------
+                0.00    0.00       3/63081219     Lattice::set(Vector, Vector, Vector, Vector) [47]
+                0.46    0.00 63081216/63081219     PatchList::setresults(ResultSet*) [19]
+[24]     0.0    0.46    0.00 63081219         Vector::length2() const [24]
+-----------------------------------------------
+                0.00    0.00       4/2225643     SimParameters::SimParameters() [45]
+                0.04    0.00  198162/2225643     CompAtom::CompAtom() [37]
+                0.05    0.00  276672/2225643     Patch::readfile(_IO_FILE*) [33]
+                0.09    0.00  459648/2225643     nonbonded::nonbonded() [32]
+                0.26    0.00 1291157/2225643     ResultSet::ResultSet(int) [29]
+[25]     0.0    0.44    0.00 2225643         Vector::Vector() [25]
+-----------------------------------------------
+                0.15    0.16   32832/32832       PatchList::zeroresults() [27]
+[26]     0.0    0.15    0.16   32832         Patch::zeroforces() [26]
+                0.16    0.00 42054144/42054828     Vector::operator=(double const&) [30]
+-----------------------------------------------
+                0.00    0.31     228/228         main [1]
+[27]     0.0    0.00    0.31     228         PatchList::zeroresults() [27]
+                0.15    0.16   32832/32832       Patch::zeroforces() [26]
+-----------------------------------------------
+                0.00    0.00       3/21028933     operator/(Vector const&, double const&) [50]
+                0.00    0.00       4/21028933     SimParameters::SimParameters() [45]
+                0.00    0.00       4/21028933     cross(Vector const&, Vector const&) [49]
+                0.00    0.00     501/21028933     operator*(double const&, Vector const&) [44]
+                0.00    0.00    1015/21028933     Lattice::Lattice() [40]
+                0.26    0.00 21027406/21028933     operator+(Vector const&, Vector const&) [23]
+[28]     0.0    0.26    0.00 21028933         Vector::Vector(double, double, double) [28]
+-----------------------------------------------
+                0.00    0.26       7/7           main [1]
+[29]     0.0    0.00    0.26       7         ResultSet::ResultSet(int) [29]
+                0.26    0.00 1291157/2225643     Vector::Vector() [25]
+-----------------------------------------------
+                0.00    0.00     684/42054828     PatchList::setresults(ResultSet*) [19]
+                0.16    0.00 42054144/42054828     Patch::zeroforces() [26]
+[30]     0.0    0.16    0.00 42054828         Vector::operator=(double const&) [30]
+-----------------------------------------------
+                0.02    0.07       1/1           main [1]
+[31]     0.0    0.02    0.07       1         PatchList::readfile(_IO_FILE*) [31]
+                0.00    0.07     144/144         Patch::readfile(_IO_FILE*) [33]
+                0.00    0.00     144/144         Patch::Patch() [83]
+-----------------------------------------------
+                0.00    0.01   32832/459648      SelfCompute::doWork(PatchList*) [4]
+                0.00    0.08  426816/459648      PairCompute::doWork(PatchList*) [3]
+[32]     0.0    0.00    0.09  459648         nonbonded::nonbonded() [32]
+                0.09    0.00  459648/2225643     Vector::Vector() [25]
+-----------------------------------------------
+                0.00    0.07     144/144         PatchList::readfile(_IO_FILE*) [31]
+[33]     0.0    0.00    0.07     144         Patch::readfile(_IO_FILE*) [33]
+                0.05    0.00  276672/2225643     Vector::Vector() [25]
+                0.00    0.02   92224/198162      CompAtom::CompAtom() [37]
+-----------------------------------------------
+                0.05    0.02  853632/853632      PairCompute::doWork(PatchList*) [3]
+[34]     0.0    0.05    0.02  853632         Patch::image(int, Lattice&) [34]
+                0.00    0.02     311/311         Lattice::create(CompAtom*, int, int) const [38]
+-----------------------------------------------
+                0.07    0.00    5472/5472        PatchList::moveatoms() [36]
+[35]     0.0    0.07    0.00    5472         Patch::moveatoms() [35]
+-----------------------------------------------
+                0.00    0.07      38/38          main [1]
+[36]     0.0    0.00    0.07      38         PatchList::moveatoms() [36]
+                0.07    0.00    5472/5472        Patch::moveatoms() [35]
+-----------------------------------------------
+                0.00    0.02   92224/198162      Patch::readfile(_IO_FILE*) [33]
+                0.00    0.02  105938/198162      Lattice::create(CompAtom*, int, int) const [38]
+[37]     0.0    0.00    0.04  198162         CompAtom::CompAtom() [37]
+                0.04    0.00  198162/2225643     Vector::Vector() [25]
+-----------------------------------------------
+                0.00    0.02     311/311         Patch::image(int, Lattice&) [34]
+[38]     0.0    0.00    0.02     311         Lattice::create(CompAtom*, int, int) const [38]
+                0.00    0.02  105938/198162      CompAtom::CompAtom() [37]
+                0.00    0.00  105938/63187154     Vector::operator+=(Vector const&) [22]
+                0.00    0.00     334/21027406     operator+(Vector const&, Vector const&) [23]
+                0.00    0.00     501/501         operator*(double const&, Vector const&) [44]
+                0.00    0.00  105938/105938      CompAtom::operator=(CompAtom const&) [57]
+-----------------------------------------------
+                                                 <spontaneous>
+[39]     0.0    0.01    0.00                 frame_dummy [39]
+-----------------------------------------------
+                0.00    0.00       1/145         SimParameters::SimParameters() [45]
+                0.00    0.00     144/145         Patch::clearimages() [41]
+[40]     0.0    0.00    0.00     145         Lattice::Lattice() [40]
+                0.00    0.00    1015/21028933     Vector::Vector(double, double, double) [28]
+-----------------------------------------------
+                0.00    0.00     144/144         Patch::~Patch() [42]
+[41]     0.0    0.00    0.00     144         Patch::clearimages() [41]
+                0.00    0.00     144/145         Lattice::Lattice() [40]
+                0.00    0.00    3888/3888        Lattice::destroy(CompAtom**, int) const [60]
+-----------------------------------------------
+                0.00    0.00     144/144         PatchList::~PatchList() [43]
+[42]     0.0    0.00    0.00     144         Patch::~Patch() [42]
+                0.00    0.00     144/144         Patch::clearimages() [41]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[43]     0.0    0.00    0.00       1         PatchList::~PatchList() [43]
+                0.00    0.00     144/144         Patch::~Patch() [42]
+-----------------------------------------------
+                0.00    0.00     501/501         Lattice::create(CompAtom*, int, int) const [38]
+[44]     0.0    0.00    0.00     501         operator*(double const&, Vector const&) [44]
+                0.00    0.00     501/21028933     Vector::Vector(double, double, double) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[45]     0.0    0.00    0.00       1         SimParameters::SimParameters() [45]
+                0.00    0.00       4/2225643     Vector::Vector() [25]
+                0.00    0.00       1/145         Lattice::Lattice() [40]
+                0.00    0.00       4/21028933     Vector::Vector(double, double, double) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[46]     0.0    0.00    0.00       1         SimParameters::readfile(_IO_FILE*) [46]
+                0.00    0.00       1/1           Lattice::set(Vector, Vector, Vector, Vector) [47]
+                0.00    0.00      42/42          SimParameters::setparam(char const*, char const*) [84]
+-----------------------------------------------
+                0.00    0.00       1/1           SimParameters::readfile(_IO_FILE*) [46]
+[47]     0.0    0.00    0.00       1         Lattice::set(Vector, Vector, Vector, Vector) [47]
+                0.00    0.00       1/1           Lattice::recalculate() [48]
+                0.00    0.00       3/63081219     Vector::length2() const [24]
+                0.00    0.00       1/1           Lattice::volume() const [51]
+-----------------------------------------------
+                0.00    0.00       1/1           Lattice::set(Vector, Vector, Vector, Vector) [47]
+[48]     0.0    0.00    0.00       1         Lattice::recalculate() [48]
+                0.00    0.00       3/4           cross(Vector const&, Vector const&) [49]
+                0.00    0.00       3/3           operator/(Vector const&, double const&) [50]
+                0.00    0.00       3/4           operator*(Vector const&, Vector const&) [87]
+-----------------------------------------------
+                0.00    0.00       1/4           Lattice::volume() const [51]
+                0.00    0.00       3/4           Lattice::recalculate() [48]
+[49]     0.0    0.00    0.00       4         cross(Vector const&, Vector const&) [49]
+                0.00    0.00       4/21028933     Vector::Vector(double, double, double) [28]
+-----------------------------------------------
+                0.00    0.00       3/3           Lattice::recalculate() [48]
+[50]     0.0    0.00    0.00       3         operator/(Vector const&, double const&) [50]
+                0.00    0.00       3/21028933     Vector::Vector(double, double, double) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           Lattice::set(Vector, Vector, Vector, Vector) [47]
+[51]     0.0    0.00    0.00       1         Lattice::volume() const [51]
+                0.00    0.00       1/4           cross(Vector const&, Vector const&) [49]
+                0.00    0.00       1/4           operator*(Vector const&, Vector const&) [87]
+-----------------------------------------------
+                0.00    0.00  105938/105938      Lattice::create(CompAtom*, int, int) const [38]
+[57]     0.0    0.00    0.00  105938         CompAtom::operator=(CompAtom const&) [57]
+-----------------------------------------------
+                0.00    0.00   27850/27850       Molecule::readfile(_IO_FILE*) [103]
+[58]     0.0    0.00    0.00   27850         ObjectArena<char>::getNewArray(int) [58]
+                0.00    0.00     544/544         ResizeArray<char*>::add(char* const&) [70]
+-----------------------------------------------
+                0.00    0.00    1102/11020       ResultSet::compare(ResultSet&) [68]
+                0.00    0.00    2394/11020       equal(double*, double*, double*, double*) [78]
+                0.00    0.00    3420/11020       ResultSet::check() [67]
+                0.00    0.00    4104/11020       equal(double*, double*) [75]
+[59]     0.0    0.00    0.00   11020         equal(double, double) [59]
+-----------------------------------------------
+                0.00    0.00    3888/3888        Patch::clearimages() [41]
+[60]     0.0    0.00    0.00    3888         Lattice::destroy(CompAtom**, int) const [60]
+-----------------------------------------------
+                0.00    0.00    3420/3420        ResultSet::check() [67]
+[61]     0.0    0.00    0.00    3420         Vector::length() const [61]
+-----------------------------------------------
+                0.00    0.00     144/2016        SelfCompute::SelfCompute() [81]
+                0.00    0.00    1872/2016        PairCompute::PairCompute() [64]
+[62]     0.0    0.00    0.00    2016         ComputeNonbondedUtil::ComputeNonbondedUtil() [62]
+-----------------------------------------------
+                0.00    0.00     144/2016        SelfCompute::~SelfCompute() [82]
+                0.00    0.00    1872/2016        PairCompute::~PairCompute() [65]
+[63]     0.0    0.00    0.00    2016         ComputeNonbondedUtil::~ComputeNonbondedUtil() [63]
+-----------------------------------------------
+                0.00    0.00    1872/1872        ComputeList::readfile(_IO_FILE*, PatchList*) [88]
+[64]     0.0    0.00    0.00    1872         PairCompute::PairCompute() [64]
+                0.00    0.00    1872/2016        ComputeNonbondedUtil::ComputeNonbondedUtil() [62]
+-----------------------------------------------
+                0.00    0.00    1872/1872        ComputeList::~ComputeList() [90]
+[65]     0.0    0.00    0.00    1872         PairCompute::~PairCompute() [65]
+                0.00    0.00    1872/2016        ComputeNonbondedUtil::~ComputeNonbondedUtil() [63]
+-----------------------------------------------
+                0.00    0.00     544/1634        ResizeArray<char*>::add(char* const&) [70]
+                0.00    0.00     545/1634        ResizeArray<char*>::size() const [69]
+                0.00    0.00     545/1634        ResizeArrayRaw<char*>::~ResizeArrayRaw() [98]
+[66]     0.0    0.00    0.00    1634         ResizeArrayRaw<char*>::size() const [66]
+-----------------------------------------------
+                0.00    0.00    1140/1140        ResultSet::compare(ResultSet&) [68]
+[67]     0.0    0.00    0.00    1140         ResultSet::check() [67]
+                0.00    0.00    3420/3420        Vector::length() const [61]
+                0.00    0.00    3420/11020       equal(double, double) [59]
+-----------------------------------------------
+                0.00    0.00     570/570         main [1]
+[68]     0.0    0.00    0.00     570         ResultSet::compare(ResultSet&) [68]
+                0.00    0.00    1140/1140        ResultSet::check() [67]
+                0.00    0.00    1102/11020       equal(double, double) [59]
+                0.00    0.00     456/456         equal(double*, double*) [75]
+                0.00    0.00     266/266         equal(double*, double*, double*, double*) [78]
+-----------------------------------------------
+                0.00    0.00     545/545         ObjectArena<char>::~ObjectArena() [92]
+[69]     0.0    0.00    0.00     545         ResizeArray<char*>::size() const [69]
+                0.00    0.00     545/1634        ResizeArrayRaw<char*>::size() const [66]
+-----------------------------------------------
+                0.00    0.00     544/544         ObjectArena<char>::getNewArray(int) [58]
+[70]     0.0    0.00    0.00     544         ResizeArray<char*>::add(char* const&) [70]
+                0.00    0.00     544/1634        ResizeArrayRaw<char*>::size() const [66]
+                0.00    0.00     544/544         ResizeArrayRaw<char*>::ins(char* const&, int) [72]
+-----------------------------------------------
+                0.00    0.00     544/544         ObjectArena<char>::~ObjectArena() [92]
+[71]     0.0    0.00    0.00     544         ResizeArray<char*>::operator[](int) [71]
+-----------------------------------------------
+                0.00    0.00     544/544         ResizeArray<char*>::add(char* const&) [70]
+[72]     0.0    0.00    0.00     544         ResizeArrayRaw<char*>::ins(char* const&, int) [72]
+                0.00    0.00     544/544         ResizeArrayRaw<char*>::resizeRaw(int) [73]
+                0.00    0.00     544/544         operator new(unsigned int, void*) [74]
+-----------------------------------------------
+                0.00    0.00     544/544         ResizeArrayRaw<char*>::ins(char* const&, int) [72]
+[73]     0.0    0.00    0.00     544         ResizeArrayRaw<char*>::resizeRaw(int) [73]
+-----------------------------------------------
+                0.00    0.00     544/544         ResizeArrayRaw<char*>::ins(char* const&, int) [72]
+[74]     0.0    0.00    0.00     544         operator new(unsigned int, void*) [74]
+-----------------------------------------------
+                0.00    0.00     456/456         ResultSet::compare(ResultSet&) [68]
+[75]     0.0    0.00    0.00     456         equal(double*, double*) [75]
+                0.00    0.00    4104/11020       equal(double, double) [59]
+-----------------------------------------------
+                0.00    0.00     443/443         SimParameters::setparam(char const*, char const*) [84]
+[76]     0.0    0.00    0.00     443         parse_param(char const*, char const*, char const*, int&) [76]
+-----------------------------------------------
+                0.00    0.00     298/298         SimParameters::setparam(char const*, char const*) [84]
+[77]     0.0    0.00    0.00     298         parse_param(char const*, char const*, char const*, double&) [77]
+-----------------------------------------------
+                0.00    0.00     266/266         ResultSet::compare(ResultSet&) [68]
+[78]     0.0    0.00    0.00     266         equal(double*, double*, double*, double*) [78]
+                0.00    0.00    2394/11020       equal(double, double) [59]
+-----------------------------------------------
+                0.00    0.00     228/228         main [1]
+[79]     0.0    0.00    0.00     228         ResultSet::writefile(_IO_FILE*) [79]
+-----------------------------------------------
+                0.00    0.00     162/162         SimParameters::setparam(char const*, char const*) [84]
+[80]     0.0    0.00    0.00     162         parse_param(char const*, char const*, char const*, Vector&) [80]
+                0.00    0.00       4/4           Vector::set(char const*) [86]
+-----------------------------------------------
+                0.00    0.00     144/144         ComputeList::readfile(_IO_FILE*, PatchList*) [88]
+[81]     0.0    0.00    0.00     144         SelfCompute::SelfCompute() [81]
+                0.00    0.00     144/2016        ComputeNonbondedUtil::ComputeNonbondedUtil() [62]
+-----------------------------------------------
+                0.00    0.00     144/144         ComputeList::~ComputeList() [90]
+[82]     0.0    0.00    0.00     144         SelfCompute::~SelfCompute() [82]
+                0.00    0.00     144/2016        ComputeNonbondedUtil::~ComputeNonbondedUtil() [63]
+-----------------------------------------------
+                0.00    0.00     144/144         PatchList::readfile(_IO_FILE*) [31]
+[83]     0.0    0.00    0.00     144         Patch::Patch() [83]
+-----------------------------------------------
+                0.00    0.00      42/42          SimParameters::readfile(_IO_FILE*) [46]
+[84]     0.0    0.00    0.00      42         SimParameters::setparam(char const*, char const*) [84]
+                0.00    0.00     443/443         parse_param(char const*, char const*, char const*, int&) [76]
+                0.00    0.00     298/298         parse_param(char const*, char const*, char const*, double&) [77]
+                0.00    0.00     162/162         parse_param(char const*, char const*, char const*, Vector&) [80]
+-----------------------------------------------
+                0.00    0.00       7/7           main [1]
+[85]     0.0    0.00    0.00       7         ResultSet::~ResultSet() [85]
+-----------------------------------------------
+                0.00    0.00       4/4           parse_param(char const*, char const*, char const*, Vector&) [80]
+[86]     0.0    0.00    0.00       4         Vector::set(char const*) [86]
+-----------------------------------------------
+                0.00    0.00       1/4           Lattice::volume() const [51]
+                0.00    0.00       3/4           Lattice::recalculate() [48]
+[87]     0.0    0.00    0.00       4         operator*(Vector const&, Vector const&) [87]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[88]     0.0    0.00    0.00       1         ComputeList::readfile(_IO_FILE*, PatchList*) [88]
+                0.00    0.00    1872/1872        PairCompute::PairCompute() [64]
+                0.00    0.00     144/144         SelfCompute::SelfCompute() [81]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[89]     0.0    0.00    0.00       1         ComputeList::ComputeList() [89]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[90]     0.0    0.00    0.00       1         ComputeList::~ComputeList() [90]
+                0.00    0.00    1872/1872        PairCompute::~PairCompute() [65]
+                0.00    0.00     144/144         SelfCompute::~SelfCompute() [82]
+-----------------------------------------------
+                0.00    0.00       1/1           Molecule::Molecule() [104]
+[91]     0.0    0.00    0.00       1         ObjectArena<char>::ObjectArena() [91]
+                0.00    0.00       1/1           ResizeArray<char*>::ResizeArray() [93]
+-----------------------------------------------
+                0.00    0.00       1/1           Molecule::~Molecule() [105]
+[92]     0.0    0.00    0.00       1         ObjectArena<char>::~ObjectArena() [92]
+                0.00    0.00     545/545         ResizeArray<char*>::size() const [69]
+                0.00    0.00     544/544         ResizeArray<char*>::operator[](int) [71]
+                0.00    0.00       1/1           ResizeArray<char*>::~ResizeArray() [94]
+-----------------------------------------------
+                0.00    0.00       1/1           ObjectArena<char>::ObjectArena() [91]
+[93]     0.0    0.00    0.00       1         ResizeArray<char*>::ResizeArray() [93]
+                0.00    0.00       1/1           ResizeArrayRaw<char*>::ResizeArrayRaw() [97]
+                0.00    0.00       1/1           ResizeArrayRaw<char*>::resize(int) [96]
+-----------------------------------------------
+                0.00    0.00       1/1           ObjectArena<char>::~ObjectArena() [92]
+[94]     0.0    0.00    0.00       1         ResizeArray<char*>::~ResizeArray() [94]
+                0.00    0.00       1/1           ResizeArrayRaw<char*>::~ResizeArrayRaw() [98]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[95]     0.0    0.00    0.00       1         SimParameters::~SimParameters() [95]
+-----------------------------------------------
+                0.00    0.00       1/1           ResizeArray<char*>::ResizeArray() [93]
+[96]     0.0    0.00    0.00       1         ResizeArrayRaw<char*>::resize(int) [96]
+-----------------------------------------------
+                0.00    0.00       1/1           ResizeArray<char*>::ResizeArray() [93]
+[97]     0.0    0.00    0.00       1         ResizeArrayRaw<char*>::ResizeArrayRaw() [97]
+-----------------------------------------------
+                0.00    0.00       1/1           ResizeArray<char*>::~ResizeArray() [94]
+[98]     0.0    0.00    0.00       1         ResizeArrayRaw<char*>::~ResizeArrayRaw() [98]
+                0.00    0.00     545/1634        ResizeArrayRaw<char*>::size() const [66]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[99]     0.0    0.00    0.00       1         ComputeNonbondedUtil::select(SimParameters*, Molecule*, LJTable*) [99]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[100]    0.0    0.00    0.00       1         LJTable::readfile(_IO_FILE*) [100]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[101]    0.0    0.00    0.00       1         LJTable::LJTable() [101]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[102]    0.0    0.00    0.00       1         LJTable::~LJTable() [102]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[103]    0.0    0.00    0.00       1         Molecule::readfile(_IO_FILE*) [103]
+                0.00    0.00   27850/27850       ObjectArena<char>::getNewArray(int) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[104]    0.0    0.00    0.00       1         Molecule::Molecule() [104]
+                0.00    0.00       1/1           ObjectArena<char>::ObjectArena() [91]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[105]    0.0    0.00    0.00       1         Molecule::~Molecule() [105]
+                0.00    0.00       1/1           ObjectArena<char>::~ObjectArena() [92]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[106]    0.0    0.00    0.00       1         PatchList::PatchList(Lattice&) [106]
+-----------------------------------------------
+
+Index by function name
+
+  [80] parse_param(char const*, char const*, char const*, Vector&) [14] ComputeNonbondedUtil::calc_self_energy(nonbonded*) [57] CompAtom::operator=(CompAtom const&)
+  [77] parse_param(char const*, char const*, char const*, double&) [6] ComputeNonbondedUtil::calc_pair_fullelect(nonbonded*) [103] Molecule::readfile(_IO_FILE*)
+  [76] parse_param(char const*, char const*, char const*, int&) [12] ComputeNonbondedUtil::calc_self_fullelect(nonbonded*) [104] Molecule::Molecule()
+  [49] cross(Vector const&, Vector const&) [9] ComputeNonbondedUtil::calc_pair_merge_fullelect(nonbonded*) [105] Molecule::~Molecule()
+  [75] equal(double*, double*) [15] ComputeNonbondedUtil::calc_self_merge_fullelect(nonbonded*) [19] PatchList::setresults(ResultSet*)
+  [78] equal(double*, double*, double*, double*) [5] ComputeNonbondedUtil::calc_pair_energy_fullelect(nonbonded*) [27] PatchList::zeroresults()
+  [59] equal(double, double)  [11] ComputeNonbondedUtil::calc_self_energy_fullelect(nonbonded*) [31] PatchList::readfile(_IO_FILE*)
+   [2] ComputeList::runComputes(PatchList*) [7] ComputeNonbondedUtil::calc_pair_energy_merge_fullelect(nonbonded*) [36] PatchList::moveatoms()
+  [88] ComputeList::readfile(_IO_FILE*, PatchList*) [13] ComputeNonbondedUtil::calc_self_energy_merge_fullelect(nonbonded*) [106] PatchList::PatchList(Lattice&)
+  [89] ComputeList::ComputeList() [99] ComputeNonbondedUtil::select(SimParameters*, Molecule*, LJTable*) [43] PatchList::~PatchList()
+  [90] ComputeList::~ComputeList() [10] ComputeNonbondedUtil::calc_pair(nonbonded*) [67] ResultSet::check()
+  [58] ObjectArena<char>::getNewArray(int) [16] ComputeNonbondedUtil::calc_self(nonbonded*) [68] ResultSet::compare(ResultSet&)
+  [91] ObjectArena<char>::ObjectArena() [62] ComputeNonbondedUtil::ComputeNonbondedUtil() [79] ResultSet::writefile(_IO_FILE*)
+  [92] ObjectArena<char>::~ObjectArena() [63] ComputeNonbondedUtil::~ComputeNonbondedUtil() [29] ResultSet::ResultSet(int)
+   [3] PairCompute::doWork(PatchList*) [26] Patch::zeroforces() [85] ResultSet::~ResultSet()
+  [64] PairCompute::PairCompute() [41] Patch::clearimages() [32] nonbonded::nonbonded()
+  [65] PairCompute::~PairCompute() [34] Patch::image(int, Lattice&) [69] ResizeArray<char*>::size() const
+  [70] ResizeArray<char*>::add(char* const&) [33] Patch::readfile(_IO_FILE*) [66] ResizeArrayRaw<char*>::size() const
+  [93] ResizeArray<char*>::ResizeArray() [35] Patch::moveatoms() [61] Vector::length() const
+  [94] ResizeArray<char*>::~ResizeArray() [21] Patch::setforces(Vector*, Vector*) [24] Vector::length2() const
+  [71] ResizeArray<char*>::operator[](int) [83] Patch::Patch() [20] LJTable::table_row(unsigned int) const
+   [4] SelfCompute::doWork(PatchList*) [42] Patch::~Patch() [38] Lattice::create(CompAtom*, int, int) const
+  [81] SelfCompute::SelfCompute() [86] Vector::set(char const*) [51] Lattice::volume() const
+  [82] SelfCompute::~SelfCompute() [28] Vector::Vector(double, double, double) [60] Lattice::destroy(CompAtom**, int) const
+  [46] SimParameters::readfile(_IO_FILE*) [25] Vector::Vector() [17] Molecule::atomvdwtype(int) const
+  [84] SimParameters::setparam(char const*, char const*) [30] Vector::operator=(double const&) [18] Molecule::get_excl_check_for_atom(int) const
+  [45] SimParameters::SimParameters() [22] Vector::operator+=(Vector const&) [50] operator/(Vector const&, double const&)
+  [95] SimParameters::~SimParameters() [100] LJTable::readfile(_IO_FILE*) [87] operator*(Vector const&, Vector const&)
+  [72] ResizeArrayRaw<char*>::ins(char* const&, int) [101] LJTable::LJTable() [44] operator*(double const&, Vector const&)
+  [96] ResizeArrayRaw<char*>::resize(int) [102] LJTable::~LJTable() [74] operator new(unsigned int, void*)
+  [73] ResizeArrayRaw<char*>::resizeRaw(int) [48] Lattice::recalculate() [23] operator+(Vector const&, Vector const&)
+  [97] ResizeArrayRaw<char*>::ResizeArrayRaw() [47] Lattice::set(Vector, Vector, Vector, Vector) [39] frame_dummy
+  [98] ResizeArrayRaw<char*>::~ResizeArrayRaw() [40] Lattice::Lattice()
+   [8] ComputeNonbondedUtil::calc_pair_energy(nonbonded*) [37] CompAtom::CompAtom()

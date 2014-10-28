@@ -1,0 +1,29 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ns/call  ns/call  name    
+100.00      0.02     0.02   469846    42.57    42.57  spec_rand
+  0.00      0.02     0.00        1     0.00     0.00  spec_srand
+
+			Call graph
+
+
+granularity: each sample hit covers 4 byte(s) for 50.00% of 0.02 seconds
+
+index % time    self  children    called     name
+                0.02    0.00  469846/469846      main [2]
+[1]    100.0    0.02    0.00  469846         spec_rand [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00    0.02                 main [2]
+                0.02    0.00  469846/469846      spec_rand [1]
+                0.00    0.00       1/1           spec_srand [3]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[3]      0.0    0.00    0.00       1         spec_srand [3]
+-----------------------------------------------
+
+Index by function name
+
+   [1] spec_rand               [3] spec_srand

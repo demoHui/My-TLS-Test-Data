@@ -1,0 +1,447 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ks/call  Ks/call  name    
+ 61.64   1284.87  1284.87    65036     0.00     0.00  quantum_toffoli
+ 20.02   1702.15   417.28    23501     0.00     0.00  quantum_sigma_x
+ 12.81   1969.08   266.93    13345     0.00     0.00  quantum_cnot
+  3.82   2048.77    79.69      420     0.00     0.00  quantum_swaptheleads
+  0.77   2064.80    16.03       35     0.00     0.00  quantum_state_collapse
+  0.24   2069.78     4.98 880906011     0.00     0.00  quantum_objcode_put
+  0.16   2073.17     3.39 31361542     0.00     0.00  quantum_get_state
+  0.14   2076.07     2.90       42     0.00     0.00  quantum_gate1
+  0.09   2077.98     1.91      210     0.00     0.00  quantum_cond_phase
+  0.09   2079.84     1.86 19504246     0.00     0.00  quantum_add_hash
+  0.04   2080.67     0.83                             __mulsc3
+  0.03   2081.31     0.64 50865788     0.00     0.00  quantum_hash64
+  0.02   2081.80     0.48 53706781     0.00     0.00  quantum_prob_inline
+  0.02   2082.26     0.46 40555976     0.00     0.00  quantum_prob_inline
+  0.02   2082.70     0.45 52608545     0.00     0.00  quantum_prob_inline
+  0.02   2083.03     0.32       35     0.00     0.00  quantum_bmeasure
+  0.01   2083.32     0.30 53706781     0.00     0.00  quantum_real
+  0.01   2083.57     0.24 53706781     0.00     0.00  quantum_imag
+  0.01   2083.78     0.21 40555976     0.00     0.00  quantum_real
+  0.01   2083.97     0.19 40555976     0.00     0.00  quantum_imag
+  0.01   2084.15     0.18 52608545     0.00     0.00  quantum_real
+  0.01   2084.32     0.17 52608545     0.00     0.00  quantum_imag
+  0.00   2084.35     0.03   102134     0.00     0.00  quantum_decohere
+  0.00   2084.38     0.03       36     0.00     0.00  quantum_frand
+  0.00   2084.40     0.03                             quantum_add_hash
+  0.00   2084.42     0.02   102134     0.00     0.00  quantum_gate_counter
+  0.00   2084.44     0.02        1     0.00     0.00  quantum_addscratch
+  0.00   2084.46     0.02                             __x86.get_pc_thunk.bx
+  0.00   2084.47     0.01      840     0.00     0.00  test_sum
+  0.00   2084.48     0.01       21     0.00     0.00  quantum_swaptheleads_omuln_controlled
+  0.00   2084.49     0.01        1     0.00     2.05  quantum_exp_mod_n
+  0.00   2084.49     0.00   102302     0.00     0.00  quantum_qec_get_status
+  0.00   2084.49     0.00     4200     0.00     0.00  muxfa
+  0.00   2084.49     0.00     4200     0.00     0.00  muxfa_inv
+  0.00   2084.49     0.00      420     0.00     0.00  add_mod_n
+  0.00   2084.49     0.00      420     0.00     0.00  addn
+  0.00   2084.49     0.00      420     0.00     0.00  addn_inv
+  0.00   2084.49     0.00      420     0.00     0.00  madd
+  0.00   2084.49     0.00      420     0.00     0.00  madd_inv
+  0.00   2084.49     0.00      420     0.00     0.00  muxha
+  0.00   2084.49     0.00      420     0.00     0.00  muxha_inv
+  0.00   2084.49     0.00      300     0.00     0.00  quantum_memman
+  0.00   2084.49     0.00      210     0.00     0.00  quantum_cexp
+  0.00   2084.49     0.00       42     0.00     0.00  emul
+  0.00   2084.49     0.00       42     0.00     0.00  quantum_delete_matrix
+  0.00   2084.49     0.00       42     0.00     0.00  quantum_hadamard
+  0.00   2084.49     0.00       42     0.00     0.00  quantum_new_matrix
+  0.00   2084.49     0.00       36     0.00     0.00  spec_rand
+  0.00   2084.49     0.00       35     0.00     0.00  quantum_delete_qureg_hashpreserve
+  0.00   2084.49     0.00       21     0.00     0.10  mul_mod_n
+  0.00   2084.49     0.00       21     0.00     0.05  muln
+  0.00   2084.49     0.00       21     0.00     0.05  muln_inv
+  0.00   2084.49     0.00       21     0.00     0.00  quantum_inverse_mod
+  0.00   2084.49     0.00        3     0.00     0.00  quantum_gcd
+  0.00   2084.49     0.00        2     0.00     0.00  quantum_getwidth
+  0.00   2084.49     0.00        2     0.00     0.00  quantum_ipow
+  0.00   2084.49     0.00        1     0.00     0.00  quantum_delete_qureg
+  0.00   2084.49     0.00        1     0.00     0.00  quantum_destroy_hash
+  0.00   2084.49     0.00        1     0.00     0.00  quantum_frac_approx
+  0.00   2084.49     0.00        1     0.00     0.00  quantum_measure
+  0.00   2084.49     0.00        1     0.00     0.00  quantum_new_qureg
+  0.00   2084.49     0.00        1     0.00     0.01  quantum_qft
+  0.00   2084.49     0.00        1     0.00     0.00  spec_srand
+
+			Call graph
+
+
+granularity: each sample hit covers 4 byte(s) for 0.00% of 2084.49 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00 2083.61                 main [1]
+                0.01 2053.22       1/1           quantum_exp_mod_n [2]
+                0.32   17.86      35/35          quantum_bmeasure [20]
+                0.00    6.74       1/1           quantum_qft [25]
+                0.00    4.83      21/42          quantum_hadamard [23]
+                0.60    0.00      30/13345       quantum_cnot [16]
+                0.00    0.02       1/1           quantum_measure [45]
+                0.02    0.00       1/1           quantum_addscratch [47]
+                0.00    0.00       1/1           quantum_new_qureg [49]
+                0.00    0.00       3/3           quantum_gcd [58]
+                0.00    0.00       2/2           quantum_getwidth [59]
+                0.00    0.00       2/2           quantum_ipow [60]
+                0.00    0.00       1/1           spec_srand [64]
+                0.00    0.00       1/1           quantum_frac_approx [63]
+                0.00    0.00       1/1           quantum_delete_qureg [61]
+-----------------------------------------------
+                0.01 2053.22       1/1           main [1]
+[2]     98.5    0.01 2053.22       1         quantum_exp_mod_n [2]
+                0.00 2053.20      21/21          mul_mod_n [3]
+                0.02    0.00       1/23501       quantum_sigma_x [15]
+-----------------------------------------------
+                0.00 2053.20      21/21          quantum_exp_mod_n [2]
+[3]     98.5    0.00 2053.20      21         mul_mod_n [3]
+                0.00 1019.75      21/21          muln [7]
+                0.00 1019.75      21/21          muln_inv [8]
+                0.01   13.69      21/21          quantum_swaptheleads_omuln_controlled [22]
+-----------------------------------------------
+                0.00 1008.75     210/420         muln [7]
+                0.00 1008.75     210/420         muln_inv [8]
+[4]     96.8    0.00 2017.49     420         add_mod_n [4]
+                0.00 1054.68     420/420         addn_inv [6]
+                0.00  962.81     420/420         addn [9]
+-----------------------------------------------
+                3.75    0.00     190/65036       emul [28]
+                3.85    0.00     195/65036       muxha_inv [19]
+                3.87    0.00     196/65036       muxha [18]
+                9.13    0.00     462/65036       muln [7]
+                9.13    0.00     462/65036       muln_inv [8]
+               13.69    0.00     693/65036       quantum_swaptheleads_omuln_controlled [22]
+              375.39    0.01   19001/65036       muxfa_inv [14]
+              376.06    0.01   19035/65036       muxfa [13]
+              490.00    0.01   24802/65036       test_sum [10]
+[5]     61.6 1284.87    0.03   65036         quantum_toffoli [5]
+                0.02    0.01   65036/102134      quantum_decohere [42]
+                0.00    0.00   65036/880906011     quantum_objcode_put [26]
+                0.00    0.00   65036/102302      quantum_qec_get_status [50]
+-----------------------------------------------
+                0.00 1054.68     420/420         add_mod_n [4]
+[6]     50.6    0.00 1054.68     420         addn_inv [6]
+                0.00  538.63     420/420         madd_inv [12]
+                0.01  422.98     420/840         test_sum [10]
+               79.69    4.98     420/420         quantum_swaptheleads [17]
+                8.40    0.00     420/13345       quantum_cnot [16]
+-----------------------------------------------
+                0.00 1019.75      21/21          mul_mod_n [3]
+[7]     48.9    0.00 1019.75      21         muln [7]
+                0.00 1008.75     210/420         add_mod_n [4]
+                9.13    0.00     462/65036       quantum_toffoli [5]
+                0.00    1.88      21/42          emul [28]
+-----------------------------------------------
+                0.00 1019.75      21/21          mul_mod_n [3]
+[8]     48.9    0.00 1019.75      21         muln_inv [8]
+                0.00 1008.75     210/420         add_mod_n [4]
+                9.13    0.00     462/65036       quantum_toffoli [5]
+                0.00    1.88      21/42          emul [28]
+                0.00    0.00      21/21          quantum_inverse_mod [57]
+-----------------------------------------------
+                0.00  962.81     420/420         add_mod_n [4]
+[9]     46.2    0.00  962.81     420         addn [9]
+                0.00  539.82     420/420         madd [11]
+                0.01  422.98     420/840         test_sum [10]
+-----------------------------------------------
+                0.01  422.98     420/840         addn [9]
+                0.01  422.98     420/840         addn_inv [6]
+[10]    40.6    0.01  845.96     840         test_sum [10]
+              490.00    0.01   24802/65036       quantum_toffoli [5]
+              313.21    0.01   17640/23501       quantum_sigma_x [15]
+               42.72    0.00    2136/13345       quantum_cnot [16]
+-----------------------------------------------
+                0.00  539.82     420/420         addn [9]
+[11]    25.9    0.00  539.82     420         madd [11]
+                0.00  518.33    4200/4200        muxfa [13]
+                0.00   21.49     420/420         muxha [18]
+-----------------------------------------------
+                0.00  538.63     420/420         addn_inv [6]
+[12]    25.8    0.00  538.63     420         madd_inv [12]
+                0.00  517.15    4200/4200        muxfa_inv [14]
+                0.00   21.48     420/420         muxha_inv [19]
+-----------------------------------------------
+                0.00  518.33    4200/4200        madd [11]
+[13]    24.9    0.00  518.33    4200         muxfa [13]
+              376.06    0.01   19035/65036       quantum_toffoli [5]
+               97.51    0.00    4875/13345       quantum_cnot [16]
+               44.74    0.00    2520/23501       quantum_sigma_x [15]
+-----------------------------------------------
+                0.00  517.15    4200/4200        madd_inv [12]
+[14]    24.8    0.00  517.15    4200         muxfa_inv [14]
+              375.39    0.01   19001/65036       quantum_toffoli [5]
+               96.33    0.00    4816/13345       quantum_cnot [16]
+               45.42    0.00    2558/23501       quantum_sigma_x [15]
+-----------------------------------------------
+                0.02    0.00       1/23501       quantum_exp_mod_n [2]
+                6.92    0.00     390/23501       muxha_inv [19]
+                6.96    0.00     392/23501       muxha [18]
+               44.74    0.00    2520/23501       muxfa [13]
+               45.42    0.00    2558/23501       muxfa_inv [14]
+              313.21    0.01   17640/23501       test_sum [10]
+[15]    20.0  417.28    0.01   23501         quantum_sigma_x [15]
+                0.01    0.00   23501/102134      quantum_decohere [42]
+                0.00    0.00   23501/880906011     quantum_objcode_put [26]
+                0.00    0.00   23501/102302      quantum_qec_get_status [50]
+-----------------------------------------------
+                0.60    0.00      30/13345       main [1]
+                8.40    0.00     420/13345       addn_inv [6]
+               10.66    0.00     533/13345       muxha [18]
+               10.70    0.00     535/13345       muxha_inv [19]
+               42.72    0.00    2136/13345       test_sum [10]
+               96.33    0.00    4816/13345       muxfa_inv [14]
+               97.51    0.00    4875/13345       muxfa [13]
+[16]    12.8  266.93    0.01   13345         quantum_cnot [16]
+                0.00    0.00   13345/102134      quantum_decohere [42]
+                0.00    0.00   13345/880906011     quantum_objcode_put [26]
+                0.00    0.00   13345/102302      quantum_qec_get_status [50]
+-----------------------------------------------
+               79.69    4.98     420/420         addn_inv [6]
+[17]     4.1   79.69    4.98     420         quantum_swaptheleads [17]
+                4.98    0.00 880803840/880906011     quantum_objcode_put [26]
+                0.00    0.00     420/102302      quantum_qec_get_status [50]
+-----------------------------------------------
+                0.00   21.49     420/420         madd [11]
+[18]     1.0    0.00   21.49     420         muxha [18]
+               10.66    0.00     533/13345       quantum_cnot [16]
+                6.96    0.00     392/23501       quantum_sigma_x [15]
+                3.87    0.00     196/65036       quantum_toffoli [5]
+-----------------------------------------------
+                0.00   21.48     420/420         madd_inv [12]
+[19]     1.0    0.00   21.48     420         muxha_inv [19]
+               10.70    0.00     535/13345       quantum_cnot [16]
+                6.92    0.00     390/23501       quantum_sigma_x [15]
+                3.85    0.00     195/65036       quantum_toffoli [5]
+-----------------------------------------------
+                0.32   17.86      35/35          main [1]
+[20]     0.9    0.32   17.86      35         quantum_bmeasure [20]
+               16.03    0.81      35/35          quantum_state_collapse [21]
+                0.48    0.53 52638505/53706781     quantum_prob_inline [31]
+                0.02    0.00      35/36          quantum_frand [43]
+                0.00    0.00      35/880906011     quantum_objcode_put [26]
+                0.00    0.00      35/35          quantum_delete_qureg_hashpreserve [56]
+-----------------------------------------------
+               16.03    0.81      35/35          quantum_bmeasure [20]
+[21]     0.8   16.03    0.81      35         quantum_state_collapse [21]
+                0.45    0.35 52608545/52608545     quantum_prob_inline [34]
+                0.00    0.00      35/300         quantum_memman [51]
+-----------------------------------------------
+                0.01   13.69      21/21          mul_mod_n [3]
+[22]     0.7    0.01   13.69      21         quantum_swaptheleads_omuln_controlled [22]
+               13.69    0.00     693/65036       quantum_toffoli [5]
+-----------------------------------------------
+                0.00    4.83      21/42          quantum_qft [25]
+                0.00    4.83      21/42          main [1]
+[23]     0.5    0.00    9.65      42         quantum_hadamard [23]
+                2.90    6.75      42/42          quantum_gate1 [24]
+                0.00    0.00      42/880906011     quantum_objcode_put [26]
+                0.00    0.00      42/42          quantum_new_matrix [54]
+                0.00    0.00      42/42          quantum_delete_matrix [53]
+-----------------------------------------------
+                2.90    6.75      42/42          quantum_hadamard [23]
+[24]     0.5    2.90    6.75      42         quantum_gate1 [24]
+                3.39    0.39 31361542/31361542     quantum_get_state [27]
+                1.86    0.25 19504246/19504246     quantum_add_hash [29]
+                0.46    0.40 40555976/40555976     quantum_prob_inline [32]
+                0.00    0.00      42/102134      quantum_decohere [42]
+                0.00    0.00     142/300         quantum_memman [51]
+-----------------------------------------------
+                0.00    6.74       1/1           main [1]
+[25]     0.3    0.00    6.74       1         quantum_qft [25]
+                0.00    4.83      21/42          quantum_hadamard [23]
+                1.91    0.00     210/210         quantum_cond_phase [30]
+-----------------------------------------------
+                0.00    0.00       1/880906011     quantum_measure [45]
+                0.00    0.00       1/880906011     quantum_new_qureg [49]
+                0.00    0.00      35/880906011     quantum_bmeasure [20]
+                0.00    0.00      42/880906011     quantum_hadamard [23]
+                0.00    0.00     210/880906011     quantum_cond_phase [30]
+                0.00    0.00   13345/880906011     quantum_cnot [16]
+                0.00    0.00   23501/880906011     quantum_sigma_x [15]
+                0.00    0.00   65036/880906011     quantum_toffoli [5]
+                4.98    0.00 880803840/880906011     quantum_swaptheleads [17]
+[26]     0.2    4.98    0.00 880906011         quantum_objcode_put [26]
+-----------------------------------------------
+                3.39    0.39 31361542/31361542     quantum_gate1 [24]
+[27]     0.2    3.39    0.39 31361542         quantum_get_state [27]
+                0.39    0.00 31361542/50865788     quantum_hash64 [35]
+-----------------------------------------------
+                0.00    1.88      21/42          muln [7]
+                0.00    1.88      21/42          muln_inv [8]
+[28]     0.2    0.00    3.75      42         emul [28]
+                3.75    0.00     190/65036       quantum_toffoli [5]
+-----------------------------------------------
+                1.86    0.25 19504246/19504246     quantum_gate1 [24]
+[29]     0.1    1.86    0.25 19504246         quantum_add_hash [29]
+                0.25    0.00 19504246/50865788     quantum_hash64 [35]
+-----------------------------------------------
+                1.91    0.00     210/210         quantum_qft [25]
+[30]     0.1    1.91    0.00     210         quantum_cond_phase [30]
+                0.00    0.00     210/102134      quantum_decohere [42]
+                0.00    0.00     210/880906011     quantum_objcode_put [26]
+                0.00    0.00     210/210         quantum_cexp [52]
+-----------------------------------------------
+                0.01    0.01 1068276/53706781     quantum_measure [45]
+                0.48    0.53 52638505/53706781     quantum_bmeasure [20]
+[31]     0.0    0.48    0.54 53706781         quantum_prob_inline [31]
+                0.30    0.00 53706781/53706781     quantum_real [36]
+                0.24    0.00 53706781/53706781     quantum_imag [37]
+-----------------------------------------------
+                0.46    0.40 40555976/40555976     quantum_gate1 [24]
+[32]     0.0    0.46    0.40 40555976         quantum_prob_inline [32]
+                0.21    0.00 40555976/40555976     quantum_real [38]
+                0.19    0.00 40555976/40555976     quantum_imag [39]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     0.0    0.83    0.00                 __mulsc3 [33]
+-----------------------------------------------
+                0.45    0.35 52608545/52608545     quantum_state_collapse [21]
+[34]     0.0    0.45    0.35 52608545         quantum_prob_inline [34]
+                0.18    0.00 52608545/52608545     quantum_real [40]
+                0.17    0.00 52608545/52608545     quantum_imag [41]
+-----------------------------------------------
+                0.25    0.00 19504246/50865788     quantum_add_hash [29]
+                0.39    0.00 31361542/50865788     quantum_get_state [27]
+[35]     0.0    0.64    0.00 50865788         quantum_hash64 [35]
+-----------------------------------------------
+                0.30    0.00 53706781/53706781     quantum_prob_inline [31]
+[36]     0.0    0.30    0.00 53706781         quantum_real [36]
+-----------------------------------------------
+                0.24    0.00 53706781/53706781     quantum_prob_inline [31]
+[37]     0.0    0.24    0.00 53706781         quantum_imag [37]
+-----------------------------------------------
+                0.21    0.00 40555976/40555976     quantum_prob_inline [32]
+[38]     0.0    0.21    0.00 40555976         quantum_real [38]
+-----------------------------------------------
+                0.19    0.00 40555976/40555976     quantum_prob_inline [32]
+[39]     0.0    0.19    0.00 40555976         quantum_imag [39]
+-----------------------------------------------
+                0.18    0.00 52608545/52608545     quantum_prob_inline [34]
+[40]     0.0    0.18    0.00 52608545         quantum_real [40]
+-----------------------------------------------
+                0.17    0.00 52608545/52608545     quantum_prob_inline [34]
+[41]     0.0    0.17    0.00 52608545         quantum_imag [41]
+-----------------------------------------------
+                0.00    0.00      42/102134      quantum_gate1 [24]
+                0.00    0.00     210/102134      quantum_cond_phase [30]
+                0.00    0.00   13345/102134      quantum_cnot [16]
+                0.01    0.00   23501/102134      quantum_sigma_x [15]
+                0.02    0.01   65036/102134      quantum_toffoli [5]
+[42]     0.0    0.03    0.02  102134         quantum_decohere [42]
+                0.02    0.00  102134/102134      quantum_gate_counter [46]
+-----------------------------------------------
+                0.00    0.00       1/36          quantum_measure [45]
+                0.02    0.00      35/36          quantum_bmeasure [20]
+[43]     0.0    0.03    0.00      36         quantum_frand [43]
+                0.00    0.00      36/36          spec_rand [55]
+-----------------------------------------------
+                                                 <spontaneous>
+[44]     0.0    0.03    0.00                 quantum_add_hash [44]
+-----------------------------------------------
+                0.00    0.02       1/1           main [1]
+[45]     0.0    0.00    0.02       1         quantum_measure [45]
+                0.01    0.01 1068276/53706781     quantum_prob_inline [31]
+                0.00    0.00       1/36          quantum_frand [43]
+                0.00    0.00       1/880906011     quantum_objcode_put [26]
+-----------------------------------------------
+                0.02    0.00  102134/102134      quantum_decohere [42]
+[46]     0.0    0.02    0.00  102134         quantum_gate_counter [46]
+-----------------------------------------------
+                0.02    0.00       1/1           main [1]
+[47]     0.0    0.02    0.00       1         quantum_addscratch [47]
+-----------------------------------------------
+                                                 <spontaneous>
+[48]     0.0    0.02    0.00                 __x86.get_pc_thunk.bx [48]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[49]     0.0    0.00    0.00       1         quantum_new_qureg [49]
+                0.00    0.00       1/880906011     quantum_objcode_put [26]
+                0.00    0.00       2/300         quantum_memman [51]
+-----------------------------------------------
+                0.00    0.00     420/102302      quantum_swaptheleads [17]
+                0.00    0.00   13345/102302      quantum_cnot [16]
+                0.00    0.00   23501/102302      quantum_sigma_x [15]
+                0.00    0.00   65036/102302      quantum_toffoli [5]
+[50]     0.0    0.00    0.00  102302         quantum_qec_get_status [50]
+-----------------------------------------------
+                0.00    0.00       1/300         quantum_destroy_hash [62]
+                0.00    0.00       1/300         quantum_delete_qureg [61]
+                0.00    0.00       2/300         quantum_new_qureg [49]
+                0.00    0.00      35/300         quantum_delete_qureg_hashpreserve [56]
+                0.00    0.00      35/300         quantum_state_collapse [21]
+                0.00    0.00      42/300         quantum_new_matrix [54]
+                0.00    0.00      42/300         quantum_delete_matrix [53]
+                0.00    0.00     142/300         quantum_gate1 [24]
+[51]     0.0    0.00    0.00     300         quantum_memman [51]
+-----------------------------------------------
+                0.00    0.00     210/210         quantum_cond_phase [30]
+[52]     0.0    0.00    0.00     210         quantum_cexp [52]
+-----------------------------------------------
+                0.00    0.00      42/42          quantum_hadamard [23]
+[53]     0.0    0.00    0.00      42         quantum_delete_matrix [53]
+                0.00    0.00      42/300         quantum_memman [51]
+-----------------------------------------------
+                0.00    0.00      42/42          quantum_hadamard [23]
+[54]     0.0    0.00    0.00      42         quantum_new_matrix [54]
+                0.00    0.00      42/300         quantum_memman [51]
+-----------------------------------------------
+                0.00    0.00      36/36          quantum_frand [43]
+[55]     0.0    0.00    0.00      36         spec_rand [55]
+-----------------------------------------------
+                0.00    0.00      35/35          quantum_bmeasure [20]
+[56]     0.0    0.00    0.00      35         quantum_delete_qureg_hashpreserve [56]
+                0.00    0.00      35/300         quantum_memman [51]
+-----------------------------------------------
+                0.00    0.00      21/21          muln_inv [8]
+[57]     0.0    0.00    0.00      21         quantum_inverse_mod [57]
+-----------------------------------------------
+                0.00    0.00       3/3           main [1]
+[58]     0.0    0.00    0.00       3         quantum_gcd [58]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[59]     0.0    0.00    0.00       2         quantum_getwidth [59]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[60]     0.0    0.00    0.00       2         quantum_ipow [60]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[61]     0.0    0.00    0.00       1         quantum_delete_qureg [61]
+                0.00    0.00       1/1           quantum_destroy_hash [62]
+                0.00    0.00       1/300         quantum_memman [51]
+-----------------------------------------------
+                0.00    0.00       1/1           quantum_delete_qureg [61]
+[62]     0.0    0.00    0.00       1         quantum_destroy_hash [62]
+                0.00    0.00       1/300         quantum_memman [51]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[63]     0.0    0.00    0.00       1         quantum_frac_approx [63]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[64]     0.0    0.00    0.00       1         spec_srand [64]
+-----------------------------------------------
+
+Index by function name
+
+  [33] __mulsc3               [30] quantum_cond_phase     [45] quantum_measure
+  [48] __x86.get_pc_thunk.bx  [42] quantum_decohere       [51] quantum_memman
+   [4] add_mod_n              [53] quantum_delete_matrix  [54] quantum_new_matrix
+   [9] addn                   [61] quantum_delete_qureg   [49] quantum_new_qureg
+   [6] addn_inv               [56] quantum_delete_qureg_hashpreserve [26] quantum_objcode_put
+  [28] emul                   [62] quantum_destroy_hash   [32] quantum_prob_inline
+  [11] madd                    [2] quantum_exp_mod_n      [31] quantum_prob_inline
+  [12] madd_inv               [63] quantum_frac_approx    [34] quantum_prob_inline
+   [3] mul_mod_n              [43] quantum_frand          [50] quantum_qec_get_status
+   [7] muln                   [24] quantum_gate1          [25] quantum_qft
+   [8] muln_inv               [46] quantum_gate_counter   [38] quantum_real
+  [13] muxfa                  [58] quantum_gcd            [36] quantum_real
+  [14] muxfa_inv              [27] quantum_get_state      [40] quantum_real
+  [18] muxha                  [59] quantum_getwidth       [15] quantum_sigma_x
+  [19] muxha_inv              [23] quantum_hadamard       [21] quantum_state_collapse
+  [29] quantum_add_hash       [35] quantum_hash64         [17] quantum_swaptheleads
+  [44] quantum_add_hash       [39] quantum_imag           [22] quantum_swaptheleads_omuln_controlled
+  [47] quantum_addscratch     [37] quantum_imag            [5] quantum_toffoli
+  [20] quantum_bmeasure       [41] quantum_imag           [55] spec_rand
+  [52] quantum_cexp           [57] quantum_inverse_mod    [64] spec_srand
+  [16] quantum_cnot           [60] quantum_ipow           [10] test_sum

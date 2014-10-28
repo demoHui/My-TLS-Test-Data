@@ -1,0 +1,133 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ks/call  Ks/call  name    
+ 62.83    648.90   648.90  7224539     0.00     0.00  primal_bea_mpp
+ 15.70    811.06   162.16    36129     0.00     0.00  refresh_potential
+  6.51    878.27    67.22 87381343     0.00     0.00  replace_weaker_arc
+  3.43    913.72    35.44 2239140416     0.00     0.00  bea_is_dual_infeasible
+  3.18    946.58    32.86  7224533     0.00     0.00  update_tree
+  2.35    970.88    24.30        5     0.00     0.02  price_out_impl
+  1.79    989.37    18.49  7224533     0.00     0.00  sort_basket
+  1.50   1004.89    15.52  7224533     0.00     0.00  primal_iminus
+  1.22   1017.44    12.55 135195277     0.00     0.00  insert_new_arc
+  0.59   1023.55     6.11        6     0.00     0.15  primal_net_simplex
+  0.36   1027.28     3.73        1     0.00     0.00  write_circulations
+  0.20   1029.31     2.03        6     0.00     0.00  dual_feasible
+  0.17   1031.05     1.74        4     0.00     0.00  suspend_impl
+  0.13   1032.44     1.39        6     0.00     0.00  flow_cost
+  0.04   1032.82     0.38        5     0.00     0.00  refresh_neighbour_lists
+  0.00   1032.85     0.03        1     0.00     0.00  read_min
+  0.00   1032.86     0.01                             resize_prob
+  0.00   1032.86     0.00        6     0.00     0.00  primal_feasible
+  0.00   1032.86     0.00        1     0.00     0.00  getfree
+  0.00   1032.86     0.00        1     0.00     1.03  global_opt
+  0.00   1032.86     0.00        1     0.00     0.00  primal_start_artificial
+
+			Call graph
+
+
+granularity: each sample hit covers 4 byte(s) for 0.00% of 1032.86 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00 1032.85                 main [1]
+                0.00 1029.01       1/1           global_opt [2]
+                3.73    0.08       1/1           write_circulations [13]
+                0.03    0.00       1/1           read_min [18]
+                0.00    0.00       1/1           primal_start_artificial [22]
+                0.00    0.00       1/1           getfree [21]
+-----------------------------------------------
+                0.00 1029.01       1/1           main [1]
+[2]     99.6    0.00 1029.01       1         global_opt [2]
+                6.11  915.40       6/6           primal_net_simplex [3]
+               24.30   79.77       5/5           price_out_impl [6]
+                1.74    0.30       4/4           suspend_impl [14]
+                1.39    0.00       6/6           flow_cost [16]
+-----------------------------------------------
+                6.11  915.40       6/6           global_opt [2]
+[3]     89.2    6.11  915.40       6         primal_net_simplex [3]
+              648.90   53.93 7224539/7224539     primal_bea_mpp [4]
+              162.16    0.00   36129/36129       refresh_potential [5]
+               32.86    0.00 7224533/7224533     update_tree [9]
+               15.52    0.00 7224533/7224533     primal_iminus [11]
+                2.03    0.00       6/6           dual_feasible [15]
+                0.00    0.00       6/6           primal_feasible [20]
+-----------------------------------------------
+              648.90   53.93 7224539/7224539     primal_net_simplex [3]
+[4]     68.0  648.90   53.93 7224539         primal_bea_mpp [4]
+               35.44    0.00 2239140416/2239140416     bea_is_dual_infeasible [8]
+               18.49    0.00 7224533/7224533     sort_basket [10]
+-----------------------------------------------
+              162.16    0.00   36129/36129       primal_net_simplex [3]
+[5]     15.7  162.16    0.00   36129         refresh_potential [5]
+-----------------------------------------------
+               24.30   79.77       5/5           global_opt [2]
+[6]     10.1   24.30   79.77       5         price_out_impl [6]
+               67.22    0.00 87381343/87381343     replace_weaker_arc [7]
+               12.55    0.00 135195277/135195277     insert_new_arc [12]
+-----------------------------------------------
+               67.22    0.00 87381343/87381343     price_out_impl [6]
+[7]      6.5   67.22    0.00 87381343         replace_weaker_arc [7]
+-----------------------------------------------
+               35.44    0.00 2239140416/2239140416     primal_bea_mpp [4]
+[8]      3.4   35.44    0.00 2239140416         bea_is_dual_infeasible [8]
+-----------------------------------------------
+               32.86    0.00 7224533/7224533     primal_net_simplex [3]
+[9]      3.2   32.86    0.00 7224533         update_tree [9]
+-----------------------------------------------
+                             271949671             sort_basket [10]
+               18.49    0.00 7224533/7224533     primal_bea_mpp [4]
+[10]     1.8   18.49    0.00 7224533+271949671 sort_basket [10]
+                             271949671             sort_basket [10]
+-----------------------------------------------
+               15.52    0.00 7224533/7224533     primal_net_simplex [3]
+[11]     1.5   15.52    0.00 7224533         primal_iminus [11]
+-----------------------------------------------
+               12.55    0.00 135195277/135195277     price_out_impl [6]
+[12]     1.2   12.55    0.00 135195277         insert_new_arc [12]
+-----------------------------------------------
+                3.73    0.08       1/1           main [1]
+[13]     0.4    3.73    0.08       1         write_circulations [13]
+                0.08    0.00       1/5           refresh_neighbour_lists [17]
+-----------------------------------------------
+                1.74    0.30       4/4           global_opt [2]
+[14]     0.2    1.74    0.30       4         suspend_impl [14]
+                0.30    0.00       4/5           refresh_neighbour_lists [17]
+-----------------------------------------------
+                2.03    0.00       6/6           primal_net_simplex [3]
+[15]     0.2    2.03    0.00       6         dual_feasible [15]
+-----------------------------------------------
+                1.39    0.00       6/6           global_opt [2]
+[16]     0.1    1.39    0.00       6         flow_cost [16]
+-----------------------------------------------
+                0.08    0.00       1/5           write_circulations [13]
+                0.30    0.00       4/5           suspend_impl [14]
+[17]     0.0    0.38    0.00       5         refresh_neighbour_lists [17]
+-----------------------------------------------
+                0.03    0.00       1/1           main [1]
+[18]     0.0    0.03    0.00       1         read_min [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     0.0    0.01    0.00                 resize_prob [19]
+-----------------------------------------------
+                0.00    0.00       6/6           primal_net_simplex [3]
+[20]     0.0    0.00    0.00       6         primal_feasible [20]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[21]     0.0    0.00    0.00       1         getfree [21]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[22]     0.0    0.00    0.00       1         primal_start_artificial [22]
+-----------------------------------------------
+
+Index by function name
+
+   [8] bea_is_dual_infeasible  [4] primal_bea_mpp          [5] refresh_potential
+  [15] dual_feasible          [20] primal_feasible         [7] replace_weaker_arc
+  [16] flow_cost              [11] primal_iminus          [19] resize_prob
+  [21] getfree                 [3] primal_net_simplex     [10] sort_basket
+   [2] global_opt             [22] primal_start_artificial [14] suspend_impl
+  [12] insert_new_arc         [18] read_min                [9] update_tree
+   [6] price_out_impl         [17] refresh_neighbour_lists [13] write_circulations
